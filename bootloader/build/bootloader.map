@@ -1,0 +1,250 @@
+Archive member included to satisfy reference by file (symbol)
+
+/home/zzy/arm-cortex_a8-linux-gnueabi-4.9.4/lib/gcc/arm-cortex_a8-linux-gnueabi/4.9.4/libgcc.a(_divsi3.o)
+                              lib.o (__aeabi_idiv)
+
+Allocating common symbols
+Common symbol       size              file
+
+netbuffer           0x600             dev_build_in.o
+download_addr       0x4               net_build_in.o
+total_len           0x4               net_build_in.o
+uart_buffer         0x64              dev_build_in.o
+download_flag       0x4               net_build_in.o
+arp_buffer          0x2a              net_build_in.o
+
+Discarded input sections
+
+ .debug_aranges
+                0x0000000000000000       0x40 dev_build_in.o
+ .debug_info    0x0000000000000000      0x24c dev_build_in.o
+ .debug_abbrev  0x0000000000000000       0x28 dev_build_in.o
+ .debug_line    0x0000000000000000      0x153 dev_build_in.o
+ .debug_frame   0x0000000000000000       0x20 dev_build_in.o
+ .debug_frame   0x0000000000000000       0x20 /home/zzy/arm-cortex_a8-linux-gnueabi-4.9.4/lib/gcc/arm-cortex_a8-linux-gnueabi/4.9.4/libgcc.a(_divsi3.o)
+ .debug_line    0x0000000000000000       0xc2 /home/zzy/arm-cortex_a8-linux-gnueabi-4.9.4/lib/gcc/arm-cortex_a8-linux-gnueabi/4.9.4/libgcc.a(_divsi3.o)
+ .debug_info    0x0000000000000000      0x126 /home/zzy/arm-cortex_a8-linux-gnueabi-4.9.4/lib/gcc/arm-cortex_a8-linux-gnueabi/4.9.4/libgcc.a(_divsi3.o)
+ .debug_abbrev  0x0000000000000000       0x14 /home/zzy/arm-cortex_a8-linux-gnueabi-4.9.4/lib/gcc/arm-cortex_a8-linux-gnueabi/4.9.4/libgcc.a(_divsi3.o)
+ .debug_aranges
+                0x0000000000000000       0x20 /home/zzy/arm-cortex_a8-linux-gnueabi-4.9.4/lib/gcc/arm-cortex_a8-linux-gnueabi/4.9.4/libgcc.a(_divsi3.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+                0x0000000030008000                . = 0x30008000
+
+.text           0x0000000030008000     0x2c44
+ cpu_build_in.o(.text)
+ .text          0x0000000030008000      0x4f4 cpu_build_in.o
+                0x0000000030008000                _start
+                0x0000000030008178                init_memory
+                0x00000000300083dc                init_clock
+ *(.text)
+ *fill*         0x00000000300084f4        0x4 
+ .text          0x00000000300084f8     0x1560 dev_build_in.o
+                0x00000000300086e0                dm9000_irq
+                0x0000000030008740                dm9000_probe
+                0x00000000300087c0                dm9000_init
+                0x00000000300088f8                dm9000_tx
+                0x00000000300089b8                dm9000_rx
+                0x00000000300089dc                led_init
+                0x00000000300089f4                led_change_status
+                0x0000000030008a14                delay
+                0x0000000030008a50                wait_idle
+                0x0000000030008a68                nand_select_chip
+                0x0000000030008a80                nand_deselect_chip
+                0x0000000030008a98                write_cmd
+                0x0000000030008aa8                write_addr
+                0x0000000030008adc                read_data
+                0x0000000030008aec                write_data
+                0x0000000030008afc                nand_reset
+                0x0000000030008b40                read_nand_status
+                0x0000000030008b70                nand_init
+                0x0000000030008c10                nand_read_id
+                0x0000000030008c68                nand_erase
+                0x0000000030008d38                nand_read
+                0x0000000030008dd8                nand_write
+                0x0000000030008ebc                copy_code_to_ram
+                0x0000000030008ed0                nand_enable_hwecc
+                0x0000000030008f44                nand_write_hwecc
+                0x0000000030009108                uart_init
+                0x00000000300091c0                uart_in
+                0x00000000300091d4                uart_putchar
+                0x0000000030009254                uart_getchar
+                0x0000000030009278                uart_puts
+                0x00000000300092a0                uart_gets
+                0x000000003000932c                uart_get_buffer
+                0x0000000030009338                printf
+                0x0000000030009590                raise
+                0x0000000030009598                enable_interrupts
+                0x00000000300095a8                disenable_interrupts
+                0x00000000300095b8                exit10_init
+                0x0000000030009638                irq_handler
+                0x0000000030009644                time_function
+                0x0000000030009680                start_timer
+                0x00000000300096b8                stop_timer
+                0x00000000300096f0                reset_time_val
+                0x0000000030009718                stop_all_timer
+                0x000000003000972c                timer_init
+                0x0000000030009940                delay_ms
+                0x0000000030009980                __udivsi3
+                0x0000000030009980                __aeabi_uidiv
+                0x0000000030009a28                __aeabi_uidivmod
+                0x0000000030009a48                __aeabi_ldiv0
+                0x0000000030009a48                __aeabi_idiv0
+ .text          0x0000000030009a58      0x8d4 net_build_in.o
+                0x0000000030009a58                is_my_ip
+                0x0000000030009a90                arp_request
+                0x0000000030009b94                arp_reply
+                0x0000000030009c64                arp_process
+                0x000000003000a000                net_handle
+                0x000000003000a260                tftp_download_run
+                0x000000003000a284                tftp_download_nand
+ .text          0x000000003000a32c      0x118 app_build_in.o
+                0x000000003000a32c                nand_boot_linux
+                0x000000003000a374                printinfo
+                0x000000003000a3c4                autoboot
+ .text          0x000000003000a444      0x344 lib.o
+                0x000000003000a444                memcpy
+                0x000000003000a47c                strcpy
+                0x000000003000a4a8                memset
+                0x000000003000a4cc                strlen
+                0x000000003000a508                strcmp
+                0x000000003000a58c                atoi
+                0x000000003000a63c                itoa
+                0x000000003000a730                strstr
+ .text          0x000000003000a788       0xfc /home/zzy/arm-cortex_a8-linux-gnueabi-4.9.4/lib/gcc/arm-cortex_a8-linux-gnueabi/4.9.4/libgcc.a(_divsi3.o)
+                0x000000003000a788                __aeabi_idiv
+                0x000000003000a788                __divsi3
+                0x000000003000a864                __aeabi_idivmod
+ *(.rodata.str1.4)
+ .rodata.str1.4
+                0x000000003000a884      0x15d dev_build_in.o
+ *fill*         0x000000003000a9e1        0x3 
+ .rodata.str1.4
+                0x000000003000a9e4      0x10d net_build_in.o
+                                        0x111 (size before relaxing)
+ *fill*         0x000000003000aaf1        0x3 
+ .rodata.str1.4
+                0x000000003000aaf4      0x150 app_build_in.o
+                                        0x14e (size before relaxing)
+ .rodata.str1.4
+                0x000000003000ac44       0x11 lib.o
+
+.glue_7         0x000000003000ac44        0x0
+ .glue_7        0x000000003000ac44        0x0 linker stubs
+
+.glue_7t        0x000000003000ac44        0x0
+ .glue_7t       0x000000003000ac44        0x0 linker stubs
+
+.vfp11_veneer   0x000000003000ac44        0x0
+ .vfp11_veneer  0x000000003000ac44        0x0 linker stubs
+
+.v4_bx          0x000000003000ac44        0x0
+ .v4_bx         0x000000003000ac44        0x0 linker stubs
+
+.iplt           0x000000003000ac44        0x0
+ .iplt          0x000000003000ac44        0x0 cpu_build_in.o
+
+.text.startup   0x000000003000ac44       0x98
+ .text.startup  0x000000003000ac44       0x98 app_build_in.o
+                0x000000003000ac44                main
+
+.rel.dyn        0x000000003000acdc        0x0
+ .rel.iplt      0x000000003000acdc        0x0 cpu_build_in.o
+
+.data           0x000000003000acdc       0x84
+ *(.data)
+ .data          0x000000003000acdc        0x0 cpu_build_in.o
+ .data          0x000000003000acdc       0x4c dev_build_in.o
+                0x000000003000acdc                mac_addr
+                0x000000003000ace4                UDIVSLOTn_NUM
+                0x000000003000ad24                time_val
+ .data          0x000000003000ad28       0x34 net_build_in.o
+                0x000000003000ad28                ip_addr
+                0x000000003000ad2c                host_mac_addr
+                0x000000003000ad34                host_ip_addr
+                0x000000003000ad38                filename
+                0x000000003000ad58                current_block
+ .data          0x000000003000ad5c        0x4 app_build_in.o
+                0x000000003000ad5c                krnl_fnc
+ .data          0x000000003000ad60        0x0 lib.o
+ .data          0x000000003000ad60        0x0 /home/zzy/arm-cortex_a8-linux-gnueabi-4.9.4/lib/gcc/arm-cortex_a8-linux-gnueabi/4.9.4/libgcc.a(_divsi3.o)
+
+.igot.plt       0x000000003000ad60        0x0
+ .igot.plt      0x000000003000ad60        0x0 cpu_build_in.o
+
+.rodata
+ *(.rodata)
+                0x000000003000ad60                . = ALIGN (0x4)
+                0x000000003000ad60                __begin_bss = .
+
+.bss            0x000000003000ad60      0x6de
+ *(.bss)
+ .bss           0x000000003000ad60        0x0 cpu_build_in.o
+ .bss           0x000000003000ad60       0x40 dev_build_in.o
+ .bss           0x000000003000ada0        0x1 net_build_in.o
+                0x000000003000ada0                get_mac_flag
+ .bss           0x000000003000ada1        0x0 app_build_in.o
+ .bss           0x000000003000ada1        0x0 lib.o
+ .bss           0x000000003000ada1        0x0 /home/zzy/arm-cortex_a8-linux-gnueabi-4.9.4/lib/gcc/arm-cortex_a8-linux-gnueabi/4.9.4/libgcc.a(_divsi3.o)
+ *fill*         0x000000003000ada1        0x3 
+ COMMON         0x000000003000ada4      0x664 dev_build_in.o
+                0x000000003000ada4                netbuffer
+                0x000000003000b3a4                uart_buffer
+ COMMON         0x000000003000b408       0x36 net_build_in.o
+                0x000000003000b408                download_addr
+                0x000000003000b40c                total_len
+                0x000000003000b410                download_flag
+                0x000000003000b414                arp_buffer
+                0x000000003000b440                . = ALIGN (0x4)
+                0x000000003000b440                __end_bss = .
+LOAD cpu_build_in.o
+LOAD dev_build_in.o
+LOAD net_build_in.o
+LOAD app_build_in.o
+LOAD lib.o
+LOAD /home/zzy/arm-cortex_a8-linux-gnueabi-4.9.4/lib/gcc/arm-cortex_a8-linux-gnueabi/4.9.4/libgcc.a
+OUTPUT(bootloader.elf elf32-littlearm)
+
+.ARM.attributes
+                0x0000000000000000       0x37
+ .ARM.attributes
+                0x0000000000000000       0x25 cpu_build_in.o
+ .ARM.attributes
+                0x0000000000000025       0x3b dev_build_in.o
+ .ARM.attributes
+                0x0000000000000060       0x3b net_build_in.o
+ .ARM.attributes
+                0x000000000000009b       0x3b app_build_in.o
+ .ARM.attributes
+                0x00000000000000d6       0x3b lib.o
+ .ARM.attributes
+                0x0000000000000111       0x27 /home/zzy/arm-cortex_a8-linux-gnueabi-4.9.4/lib/gcc/arm-cortex_a8-linux-gnueabi/4.9.4/libgcc.a(_divsi3.o)
+
+.note.GNU-stack
+                0x0000000000000000        0x0
+ .note.GNU-stack
+                0x0000000000000000        0x0 dev_build_in.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 net_build_in.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 app_build_in.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 lib.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/zzy/arm-cortex_a8-linux-gnueabi-4.9.4/lib/gcc/arm-cortex_a8-linux-gnueabi/4.9.4/libgcc.a(_divsi3.o)
+
+.debug_aranges
+
+.debug_info
+
+.debug_abbrev
+
+.debug_line
+
+.debug_frame

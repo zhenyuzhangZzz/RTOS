@@ -1,0 +1,24 @@
+BUILD_MK_HALY_OBJS :=
+BUILD_MK_KRNL_OBJS :=
+BUILD_MK_MEMY_OBJS :=
+BUILD_MK_FSYS_OBJS :=
+BUILD_MK_DRIV_OBJS :=
+BUILD_MK_LIBS_OBJS :=
+BUILD_MK_TASK_OBJS :=
+BUILD_MK_LINK_OBJS :=
+
+BUILD_MK_HALY_OBJS += init.o emosenter.o halinit.o platforminit.o vector.o interrupt.o \
+					  haluart.o _udivsi3.o _umodsi3.o _modsi3.o _divsi3.o div0.o printk.o \
+					  cpuctrl.o halboarddsc.o halglobal.o halmm.o halinterrupt.o interruptdeal.o
+BUILD_MK_KRNL_OBJS += coreinit.o coremm.o corewaitlist.o coresem.o corelittlemm.o coreglobal.o \
+					  coreminimm.o coreinterrupt.o coredevice.o corethread.o coresched.o \
+					  coreidlethread.o corebitmap.o coretask.o coresleep.o systemcall.o
+BUILD_MK_MEMY_OBJS +=
+BUILD_MK_FSYS_OBJS +=
+BUILD_MK_DRIV_OBJS += drvsystick.o drvuart2.o
+BUILD_MK_LIBS_OBJS += string.o
+BUILD_MK_TASK_OBJS +=
+BUILD_MK_LINK_OBJS += $(BUILD_MK_HALY_OBJS) $(BUILD_MK_KRNL_OBJS)\
+					  $(BUILD_MK_MEMY_OBJS) $(BUILD_MK_FSYS_OBJS)\
+					  $(BUILD_MK_DRIV_OBJS) $(BUILD_MK_LIBS_OBJS)\
+					  $(BUILD_MK_TASK_OBJS)

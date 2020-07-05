@@ -1,0 +1,15 @@
+1.字级内存分配占用前4K内存的问题，解决方法是形成用于存放内存池管理数据结构的内存池 
+krnlpagemm.c
+	private mplhead_t *krnl_mplhead_init(krnl_mplmm_t *mplmm_ptr, mplhead_t *mplhead_ptr, size_t pagesize, adr_t start, adr_t end)
+
+2.字级内存释放时，需要比较所有的内存页的起始地址的问题，有待优化
+krnlpagemm.c
+	private bool_t krnl_free_pagempl(mplhead_t *mplhead_ptr, adr_t addr)
+3. 当内存池页面全部释放完毕后就删除了这个内存池，下次要使用时又要继续从4M里面拿空闲的块，影响性能，需要优化，	能否在内存不够时，再删除内存池？
+krnlpagemm.c
+	private void krnl_delete_pagempl(krnl_mplmm_t *mplmm_ptr, mplhead_t *mplhead_ptr)
+
+4.实现驱动动态加载 insmod;
+
+5. 多进程
+	在用户模式下，sem无法切换线程，解决方法，使用中断陷入内核并调度进程切换函数

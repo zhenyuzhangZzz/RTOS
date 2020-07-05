@@ -1,0 +1,594 @@
+
+Allocating common symbols
+Common symbol       size              file
+
+uart_base           0x4               haluart.o
+schd_lock           0x4               coretask.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+                0x0000000020008000                . = 0x20008000
+                0x0000000020008000                __begin_kernel = .
+
+.head.text      0x0000000020008000      0x220
+ *(.head.text)
+ .head.text     0x0000000020008000       0x84 init.o
+                0x0000000020008000                _start
+ .head.text     0x0000000020008084       0x10 emosenter.o
+                0x0000000020008084                lmosemhal_start
+ .head.text     0x0000000020008094       0x40 halinit.o
+                0x0000000020008094                hal_init
+ .head.text     0x00000000200080d4      0x14c platforminit.o
+                0x00000000200080d4                s5pv210_mmu_init
+                0x0000000020008160                platform_init
+                0x0000000020008184                s5pv210_set_ttb
+                0x000000002000818c                s5pv210_set_domain
+                0x0000000020008194                s5pv210_invalid_tlb_cache
+                0x00000000200081a8                s5pv210_enable_cache
+                0x00000000200081bc                s5pv210_enable_mmu
+                0x00000000200081e8                s5pv210_disable_mmu
+                0x00000000200081f8                s5pv210_vector_init
+                0x0000000020008208                s5pv210_set_vector_base
+
+.lmosem_hal.vector
+                0x0000000020008220       0x40
+ *(.lmosem_hal.vector)
+ .lmosem_hal.vector
+                0x0000000020008220       0x40 vector.o
+                0x0000000020008220                vector
+
+.lmosem_hal.intvect
+                0x0000000020008260      0x178
+ *(.lmosem_hal.intvect)
+ .lmosem_hal.intvect
+                0x0000000020008260      0x178 interrupt.o
+                0x0000000020008260                hal_undefine
+                0x00000000200082a8                hal_swi
+                0x00000000200082b8                hal_prefetch_abrot
+                0x0000000020008300                hal_data_abrot
+                0x0000000020008348                no_use
+                0x000000002000834c                hal_irq
+                0x0000000020008398                hal_fiq
+                0x00000000200083d8                __begin_text = .
+
+.text           0x00000000200083d8     0x571c
+ *(.text)
+ .text          0x00000000200083d8        0x0 init.o
+ .text          0x00000000200083d8        0x0 emosenter.o
+ .text          0x00000000200083d8        0x0 halinit.o
+ .text          0x00000000200083d8        0x0 platforminit.o
+ .text          0x00000000200083d8        0x0 vector.o
+ .text          0x00000000200083d8        0x0 interrupt.o
+ .text          0x00000000200083d8      0x21c haluart.o
+                0x00000000200083d8                uart_init
+                0x0000000020008578                uart_send_byte
+                0x00000000200085ac                uart_recv_byte
+                0x00000000200085e4                hal_uart_init
+ .text          0x00000000200085f4       0xc8 _udivsi3.o
+                0x00000000200085f4                __udivsi3
+                0x00000000200085f4                __aeabi_uidiv
+                0x000000002000868c                __aeabi_uidivmod
+                0x00000000200086a4                __aeabi_idivmod
+ .text          0x00000000200086bc       0xb4 _umodsi3.o
+                0x00000000200086bc                __umodsi3
+ *fill*         0x0000000020008770       0x10 
+ .text          0x0000000020008780       0xe4 _modsi3.o
+                0x0000000020008780                __modsi3
+ *fill*         0x0000000020008864       0x1c 
+ .text          0x0000000020008880      0x128 _divsi3.o
+                0x0000000020008880                __aeabi_idiv
+                0x0000000020008880                __divsi3
+ .text          0x00000000200089a8        0x4 div0.o
+                0x00000000200089a8                __div0
+ .text          0x00000000200089ac      0x32c printk.o
+                0x00000000200089ac                uart_putchar
+                0x0000000020008a30                uart_getchar
+                0x0000000020008a3c                uart_puts
+                0x0000000020008a6c                printk
+ .text          0x0000000020008cd8       0x3c cpuctrl.o
+                0x0000000020008cd8                raw_local_fiqirq_disable
+                0x0000000020008cec                raw_local_fiq_disable
+                0x0000000020008d00                raw_local_irq_disable
+ .text          0x0000000020008d14      0x1b4 halboarddsc.o
+                0x0000000020008d14                hal_board_dscp_init
+                0x0000000020008dac                hal_board_dscp_print
+ .text          0x0000000020008ec8        0x0 halglobal.o
+ .text          0x0000000020008ec8      0xa1c halmm.o
+                0x0000000020009178                mmap_dscp_init
+                0x00000000200091a8                mmap_tlb_init
+                0x0000000020009218                bd_dscp_insert_tlb
+                0x00000000200092a0                hal_mm_init
+                0x0000000020009448                hal_memallocblks
+                0x0000000020009618                hal_memfreeblks
+                0x0000000020009784                blk_print_4M_cnt
+                0x00000000200097b4                blk_mem_test2
+ .text          0x00000000200098e4      0x77c halinterrupt.o
+                0x00000000200098e4                hal_interrupt_init
+                0x0000000020009ad4                hal_rtn_intdscp
+                0x0000000020009af8                hal_rtn_exitregmap
+                0x0000000020009b58                hal_exit_mode_init
+                0x0000000020009c20                hal_clear_irqpnd
+                0x0000000020009d1c                hal_enalbe_irq
+                0x0000000020009e8c                hal_disalbe_irq
+                0x0000000020009ffc                hal_getvicirqstatus
+ .text          0x000000002000a060      0x220 interruptdeal.o
+                0x000000002000a060                hal_undefine_handle
+                0x000000002000a074                hal_prefeabort_handle
+                0x000000002000a088                hal_dataabort_handle
+                0x000000002000a09c                hal_swi_handle
+                0x000000002000a0a0                hal_irq_handle
+                0x000000002000a26c                hal_fiq_handle
+ .text          0x000000002000a280       0x7c coreinit.o
+                0x000000002000a280                krnl_init
+ .text          0x000000002000a2fc       0xac coremm.o
+                0x000000002000a2fc                krnl_mm_init
+                0x000000002000a35c                krnl_alloc
+                0x000000002000a380                krnl_free
+ .text          0x000000002000a3a8       0x78 corewaitlist.o
+                0x000000002000a3a8                krnl_waitlist_init
+                0x000000002000a3c4                krnl_waitlist_wait
+                0x000000002000a3c8                krnl_waitlist_up
+                0x000000002000a3ec                krnl_waitlist_upall
+ .text          0x000000002000a420       0xdc coresem.o
+                0x000000002000a420                krnl_sem_init
+                0x000000002000a434                krnl_print_sem
+                0x000000002000a484                krnl_sem_down
+                0x000000002000a4cc                krnl_sem_up
+ .text          0x000000002000a4fc      0x50c corelittlemm.o
+                0x000000002000a570                krnl_page_alloc
+                0x000000002000a81c                krnl_page_free
+ .text          0x000000002000aa08        0x0 coreglobal.o
+ .text          0x000000002000aa08      0x41c coreminimm.o
+                0x000000002000aae0                krnl_bytes_alloc
+                0x000000002000acb4                krnl_bytes_free
+ .text          0x000000002000ae24      0x474 coreinterrupt.o
+                0x000000002000ae24                request_irq
+                0x000000002000afc4                free_irq
+                0x000000002000b08c                irq_handler
+                0x000000002000b150                interrupt_test
+ .text          0x000000002000b298      0x460 coredevice.o
+                0x000000002000b2b8                register_chrdev
+                0x000000002000b454                driver_add_device
+                0x000000002000b4b8                driver_alloc
+                0x000000002000b5a4                driver_add_system
+                0x000000002000b604                driver_system_init
+                0x000000002000b634                driver_load
+                0x000000002000b67c                driver_list_all
+ .text          0x000000002000b6f8      0x2d4 corethread.o
+                0x000000002000b6f8                krnl_new_thread_dscp
+                0x000000002000b784                krnl_new_thread_stack_init
+                0x000000002000b7fc                krnl_run_thread
+                0x000000002000b82c                krnl_new_thread
+                0x000000002000b96c                krnl_inc_thread_tick
+                0x000000002000b9a4                krnl_rtn_curtthread
+ .text          0x000000002000b9cc      0x4ec coresched.o
+                0x000000002000b9cc                krnl_deal_new_thread
+                0x000000002000b9e8                krnl_save_contex_to_sched
+                0x000000002000ba48                krnl_thread_sched
+                0x000000002000bb80                krnl_try_sched
+                0x000000002000bbcc                krnl_sched_init
+                0x000000002000bc4c                krnl_thdsched_tlb_add_thread
+                0x000000002000bcd0                krnl_set_schedflag
+                0x000000002000bcf0                krnl_sched_wait
+                0x000000002000bdc4                krnl_sched_up
+ .text          0x000000002000beb8       0xd4 coreidlethread.o
+                0x000000002000beb8                cpuidle_thread
+                0x000000002000bebc                krnl_cpuidle_init
+ .text          0x000000002000bf8c      0x17c corebitmap.o
+                0x000000002000bf8c                bitmap_init
+                0x000000002000bf9c                bitmap_bit_count
+                0x000000002000bfa4                bitmap_set_bit
+                0x000000002000bfd0                bitmap_clear_bit
+                0x000000002000bffc                bitmap_get_first_set
+ .text          0x000000002000c108      0x5f0 coretask.o
+                0x000000002000c108                task2_func
+                0x000000002000c194                task3_func
+                0x000000002000c220                task0_func
+                0x000000002000c270                task1_func
+                0x000000002000c2d4                blkmemory_test
+                0x000000002000c3e8                pagememory_test
+                0x000000002000c4e4                bytememory_test
+                0x000000002000c5e4                task0
+                0x000000002000c628                task1
+                0x000000002000c66c                task2
+                0x000000002000c6b0                task3
+                0x000000002000c6f4                krnl_task_init
+ .text          0x000000002000c6f8      0x108 coresleep.o
+                0x000000002000c6f8                sleep
+                0x000000002000c708                krnl_deal_sleep
+ .text          0x000000002000c800        0x0 systemcall.o
+ .text          0x000000002000c800      0x1b0 drvsystick.o
+                0x000000002000c800                systick_open
+                0x000000002000c818                systick_handle
+                0x000000002000c82c                systick_drv_init
+ .text          0x000000002000c9b0       0x98 drvuart2.o
+                0x000000002000c9b0                uart2_open
+                0x000000002000c9c8                uart2_handle
+                0x000000002000c9dc                uart2_drv_init
+ .text          0x000000002000ca48      0x378 string.o
+                0x000000002000ca48                memcpy
+                0x000000002000ca80                strcpy
+                0x000000002000caac                strlcpy
+                0x000000002000cae4                memset
+                0x000000002000cb08                strlen
+                0x000000002000cb44                strcmp
+                0x000000002000cbc8                atoi
+                0x000000002000cc78                itoa
+                0x000000002000cd68                strstr
+ *(.rodata.str1.4)
+ .rodata.str1.4
+                0x000000002000cdc0       0x95 halinit.o
+ *fill*         0x000000002000ce55        0x3 
+ .rodata.str1.4
+                0x000000002000ce58       0x25 printk.o
+ *fill*         0x000000002000ce7d        0x3 
+ .rodata.str1.4
+                0x000000002000ce80      0x189 halboarddsc.o
+ *fill*         0x000000002000d009        0x3 
+ .rodata.str1.4
+                0x000000002000d00c      0x11e halmm.o
+ *fill*         0x000000002000d12a        0x2 
+ .rodata.str1.4
+                0x000000002000d12c       0x96 interruptdeal.o
+ *fill*         0x000000002000d1c2        0x2 
+ .rodata.str1.4
+                0x000000002000d1c4       0xac coreinit.o
+ .rodata.str1.4
+                0x000000002000d270       0x64 coresem.o
+ .rodata.str1.4
+                0x000000002000d2d4       0x1a corelittlemm.o
+ *fill*         0x000000002000d2ee        0x2 
+ .rodata.str1.4
+                0x000000002000d2f0       0x76 coreminimm.o
+ *fill*         0x000000002000d366        0x2 
+ .rodata.str1.4
+                0x000000002000d368      0x211 coreinterrupt.o
+ *fill*         0x000000002000d579        0x3 
+ .rodata.str1.4
+                0x000000002000d57c       0x48 coredevice.o
+ .rodata.str1.4
+                0x000000002000d5c4       0x88 corethread.o
+ .rodata.str1.4
+                0x000000002000d64c       0x67 coresched.o
+ *fill*         0x000000002000d6b3        0x1 
+ .rodata.str1.4
+                0x000000002000d6b4       0x14 coreidlethread.o
+ .rodata.str1.4
+                0x000000002000d6c8      0x403 coretask.o
+ *fill*         0x000000002000dacb        0x1 
+ .rodata.str1.4
+                0x000000002000dacc       0x20 drvsystick.o
+ .rodata.str1.4
+                0x000000002000daec        0x8 drvuart2.o
+                                         0x1e (size before relaxing)
+ .rodata.str1.4
+                0x000000002000daf4       0x11 string.o
+                0x000000002000db05                __end_text = .
+                0x000000002000db05                __begin_data = .
+
+.glue_7         0x000000002000daf4        0x0
+ .glue_7        0x000000002000daf4        0x0 linker stubs
+
+.glue_7t        0x000000002000daf4        0x0
+ .glue_7t       0x000000002000daf4        0x0 linker stubs
+
+.vfp11_veneer   0x000000002000daf4        0x0
+ .vfp11_veneer  0x000000002000daf4        0x0 linker stubs
+
+.v4_bx          0x000000002000daf4        0x0
+ .v4_bx         0x000000002000daf4        0x0 linker stubs
+
+.iplt           0x000000002000daf4        0x0
+ .iplt          0x000000002000daf4        0x0 init.o
+
+.data           0x000000002000daf4     0x1fec
+ *(.data)
+ .data          0x000000002000daf4        0x0 init.o
+ .data          0x000000002000daf4        0x0 emosenter.o
+ .data          0x000000002000daf4        0x0 halinit.o
+ .data          0x000000002000daf4        0x0 platforminit.o
+ .data          0x000000002000daf4        0x0 vector.o
+ .data          0x000000002000daf4        0x0 interrupt.o
+ .data          0x000000002000daf4       0x40 haluart.o
+                0x000000002000daf4                UDIVSLOTn_NUM
+ .data          0x000000002000db34        0x0 _udivsi3.o
+ .data          0x000000002000db34        0x0 _umodsi3.o
+ .data          0x000000002000db34        0x0 _modsi3.o
+ .data          0x000000002000db34        0x0 _divsi3.o
+ .data          0x000000002000db34        0x0 div0.o
+ .data          0x000000002000db34        0x0 printk.o
+ .data          0x000000002000db34        0x0 cpuctrl.o
+ .data          0x000000002000db34        0x0 halboarddsc.o
+ *fill*         0x000000002000db34        0x4 
+ .data          0x000000002000db38     0x17e0 halglobal.o
+                0x000000002000db38                exit_gpiomap
+                0x000000002000db88                adr_space
+                0x000000002000db98                irq_desc
+                0x000000002000f218                mmap_tlb
+                0x000000002000f2ec                bd
+ .data          0x000000002000f318        0x0 halmm.o
+ .data          0x000000002000f318        0x0 halinterrupt.o
+ .data          0x000000002000f318        0x0 interruptdeal.o
+ .data          0x000000002000f318        0x0 coreinit.o
+ .data          0x000000002000f318        0x0 coremm.o
+ .data          0x000000002000f318        0x0 corewaitlist.o
+ .data          0x000000002000f318        0x0 coresem.o
+ .data          0x000000002000f318        0x0 corelittlemm.o
+ .data          0x000000002000f318      0x79c coreglobal.o
+                0x000000002000f318                sleep_list
+                0x000000002000f328                thdsched_tlb
+                0x000000002000f65c                drventrytlb
+                0x000000002000f664                drvlist
+                0x000000002000f66c                chrdevs
+                0x000000002000fa6c                mplmm
+ .data          0x000000002000fab4        0x0 coreminimm.o
+ .data          0x000000002000fab4        0xc coreinterrupt.o
+                0x000000002000fab4                dataup
+                0x000000002000fab8                device
+                0x000000002000fabc                datadown
+ .data          0x000000002000fac0        0x0 coredevice.o
+ .data          0x000000002000fac0        0x0 corethread.o
+ .data          0x000000002000fac0        0x0 coresched.o
+ .data          0x000000002000fac0        0x0 coreidlethread.o
+ .data          0x000000002000fac0        0x0 corebitmap.o
+ .data          0x000000002000fac0        0x0 coretask.o
+ .data          0x000000002000fac0        0x0 coresleep.o
+ .data          0x000000002000fac0        0x0 systemcall.o
+ .data          0x000000002000fac0       0x10 drvsystick.o
+                0x000000002000fac0                systick_ops
+ .data          0x000000002000fad0       0x10 drvuart2.o
+                0x000000002000fad0                uart2_ops
+ .data          0x000000002000fae0        0x0 string.o
+                0x000000002000fae0                __end_data = .
+                0x000000002000fae0                __begin_rodata = .
+
+.igot.plt       0x000000002000fae0        0x0
+ .igot.plt      0x000000002000fae0        0x0 init.o
+
+.rodata         0x000000002000fae0      0x100
+ *(.rodata)
+ .rodata        0x000000002000fae0      0x100 corebitmap.o
+                0x000000002000fbe0                __end_rodata = .
+                0x000000002000fbe0                __begin_bss = .
+
+.rel.dyn        0x000000002000fbe0        0x0
+ .rel.iplt      0x000000002000fbe0        0x0 init.o
+
+.bss            0x000000002000fbe0        0xc
+ *(.shbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x000000002000fbe0        0x0 init.o
+ .bss           0x000000002000fbe0        0x0 emosenter.o
+ .bss           0x000000002000fbe0        0x0 halinit.o
+ .bss           0x000000002000fbe0        0x0 platforminit.o
+ .bss           0x000000002000fbe0        0x0 vector.o
+ .bss           0x000000002000fbe0        0x0 interrupt.o
+ .bss           0x000000002000fbe0        0x0 haluart.o
+ .bss           0x000000002000fbe0        0x0 _udivsi3.o
+ .bss           0x000000002000fbe0        0x0 _umodsi3.o
+ .bss           0x000000002000fbe0        0x0 _modsi3.o
+ .bss           0x000000002000fbe0        0x0 _divsi3.o
+ .bss           0x000000002000fbe0        0x0 div0.o
+ .bss           0x000000002000fbe0        0x0 printk.o
+ .bss           0x000000002000fbe0        0x0 cpuctrl.o
+ .bss           0x000000002000fbe0        0x0 halboarddsc.o
+ .bss           0x000000002000fbe0        0x0 halglobal.o
+ .bss           0x000000002000fbe0        0x0 halmm.o
+ .bss           0x000000002000fbe0        0x0 halinterrupt.o
+ .bss           0x000000002000fbe0        0x0 interruptdeal.o
+ .bss           0x000000002000fbe0        0x0 coreinit.o
+ .bss           0x000000002000fbe0        0x0 coremm.o
+ .bss           0x000000002000fbe0        0x0 corewaitlist.o
+ .bss           0x000000002000fbe0        0x0 coresem.o
+ .bss           0x000000002000fbe0        0x0 corelittlemm.o
+ .bss           0x000000002000fbe0        0x0 coreglobal.o
+ .bss           0x000000002000fbe0        0x0 coreminimm.o
+ .bss           0x000000002000fbe0        0x0 coreinterrupt.o
+ .bss           0x000000002000fbe0        0x0 coredevice.o
+ .bss           0x000000002000fbe0        0x0 corethread.o
+ .bss           0x000000002000fbe0        0x0 coresched.o
+ .bss           0x000000002000fbe0        0x0 coreidlethread.o
+ .bss           0x000000002000fbe0        0x0 corebitmap.o
+ .bss           0x000000002000fbe0        0x4 coretask.o
+                0x000000002000fbe0                var
+ .bss           0x000000002000fbe4        0x0 coresleep.o
+ .bss           0x000000002000fbe4        0x0 systemcall.o
+ .bss           0x000000002000fbe4        0x0 drvsystick.o
+ .bss           0x000000002000fbe4        0x0 drvuart2.o
+ .bss           0x000000002000fbe4        0x0 string.o
+ *(COMMON)
+ COMMON         0x000000002000fbe4        0x4 haluart.o
+                0x000000002000fbe4                uart_base
+ COMMON         0x000000002000fbe8        0x4 coretask.o
+                0x000000002000fbe8                schd_lock
+                0x000000002000fbec                . = ALIGN (0x4)
+                0x000000002000fbec                __end_bss = .
+                0x000000002000fbec                __end_kernel = .
+LOAD init.o
+LOAD emosenter.o
+LOAD halinit.o
+LOAD platforminit.o
+LOAD vector.o
+LOAD interrupt.o
+LOAD haluart.o
+LOAD _udivsi3.o
+LOAD _umodsi3.o
+LOAD _modsi3.o
+LOAD _divsi3.o
+LOAD div0.o
+LOAD printk.o
+LOAD cpuctrl.o
+LOAD halboarddsc.o
+LOAD halglobal.o
+LOAD halmm.o
+LOAD halinterrupt.o
+LOAD interruptdeal.o
+LOAD coreinit.o
+LOAD coremm.o
+LOAD corewaitlist.o
+LOAD coresem.o
+LOAD corelittlemm.o
+LOAD coreglobal.o
+LOAD coreminimm.o
+LOAD coreinterrupt.o
+LOAD coredevice.o
+LOAD corethread.o
+LOAD coresched.o
+LOAD coreidlethread.o
+LOAD corebitmap.o
+LOAD coretask.o
+LOAD coresleep.o
+LOAD systemcall.o
+LOAD drvsystick.o
+LOAD drvuart2.o
+LOAD string.o
+OUTPUT(emoskrnl.elf elf32-littlearm)
+
+.ARM.attributes
+                0x0000000000000000       0x37
+ .ARM.attributes
+                0x0000000000000000       0x25 init.o
+ .ARM.attributes
+                0x0000000000000025       0x3b emosenter.o
+ .ARM.attributes
+                0x0000000000000060       0x3b halinit.o
+ .ARM.attributes
+                0x000000000000009b       0x3b platforminit.o
+ .ARM.attributes
+                0x00000000000000d6       0x25 vector.o
+ .ARM.attributes
+                0x00000000000000fb       0x25 interrupt.o
+ .ARM.attributes
+                0x0000000000000120       0x3b haluart.o
+ .ARM.attributes
+                0x000000000000015b       0x25 _udivsi3.o
+ .ARM.attributes
+                0x0000000000000180       0x25 _umodsi3.o
+ .ARM.attributes
+                0x00000000000001a5       0x25 _modsi3.o
+ .ARM.attributes
+                0x00000000000001ca       0x25 _divsi3.o
+ .ARM.attributes
+                0x00000000000001ef       0x3b div0.o
+ .ARM.attributes
+                0x000000000000022a       0x3b printk.o
+ .ARM.attributes
+                0x0000000000000265       0x3b cpuctrl.o
+ .ARM.attributes
+                0x00000000000002a0       0x3b halboarddsc.o
+ .ARM.attributes
+                0x00000000000002db       0x3b halglobal.o
+ .ARM.attributes
+                0x0000000000000316       0x3b halmm.o
+ .ARM.attributes
+                0x0000000000000351       0x3b halinterrupt.o
+ .ARM.attributes
+                0x000000000000038c       0x3b interruptdeal.o
+ .ARM.attributes
+                0x00000000000003c7       0x3b coreinit.o
+ .ARM.attributes
+                0x0000000000000402       0x3b coremm.o
+ .ARM.attributes
+                0x000000000000043d       0x3b corewaitlist.o
+ .ARM.attributes
+                0x0000000000000478       0x3b coresem.o
+ .ARM.attributes
+                0x00000000000004b3       0x3b corelittlemm.o
+ .ARM.attributes
+                0x00000000000004ee       0x3b coreglobal.o
+ .ARM.attributes
+                0x0000000000000529       0x3b coreminimm.o
+ .ARM.attributes
+                0x0000000000000564       0x3b coreinterrupt.o
+ .ARM.attributes
+                0x000000000000059f       0x3b coredevice.o
+ .ARM.attributes
+                0x00000000000005da       0x3b corethread.o
+ .ARM.attributes
+                0x0000000000000615       0x3b coresched.o
+ .ARM.attributes
+                0x0000000000000650       0x3b coreidlethread.o
+ .ARM.attributes
+                0x000000000000068b       0x3b corebitmap.o
+ .ARM.attributes
+                0x00000000000006c6       0x3b coretask.o
+ .ARM.attributes
+                0x0000000000000701       0x3b coresleep.o
+ .ARM.attributes
+                0x000000000000073c       0x3b systemcall.o
+ .ARM.attributes
+                0x0000000000000777       0x3b drvsystick.o
+ .ARM.attributes
+                0x00000000000007b2       0x3b drvuart2.o
+ .ARM.attributes
+                0x00000000000007ed       0x3b string.o
+
+.note.GNU-stack
+                0x0000000000000000        0x0
+ .note.GNU-stack
+                0x0000000000000000        0x0 emosenter.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 halinit.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 platforminit.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 haluart.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 div0.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 printk.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 cpuctrl.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 halboarddsc.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 halglobal.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 halmm.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 halinterrupt.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 interruptdeal.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 coreinit.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 coremm.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 corewaitlist.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 coresem.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 corelittlemm.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 coreglobal.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 coreminimm.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 coreinterrupt.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 coredevice.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 corethread.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 coresched.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 coreidlethread.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 corebitmap.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 coretask.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 coresleep.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 systemcall.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 drvsystick.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 drvuart2.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 string.o

@@ -1,0 +1,114 @@
+#ifndef __PLATFORM_H__
+#define __PLATFORM_H__
+
+#ifdef CFG_S5PV210_PLATFORM
+
+#define CPU_NUM					1
+
+#define PLFM_ADRSPCE_NR 		1
+
+#define INT_STACK_HIGH_ADDR		0x60000000
+
+#define TTB_PHY_ADDR			0x20004000
+#define PAGE_TABLE_SIZE			4096
+
+#define DSC_SELECT_IDE			2					/*页表描述符, 2表示段页*/
+#define DSC_SELECT_NOCW			(0 << 2)			/*无回写缓存*/
+#define DSC_SELECT_4BIT			(1 << 4)			/*必须为1*/
+#define DSC_SELECT_DOMAIN(n)	((n) << 5)			/*domain*/
+#define DSC_SELECT_AP(n)		((n) << 10)			/*访问权限*/
+
+#define AP_DEPEND_SR			0
+#define AP_SUPWR_USERNOACCESS	1
+#define AP_SUPWR_USERR			2
+#define AP_ALL_WR				3
+
+/*led相关*/
+#define GPC0CON			0xE0200060
+#define GPC0DAT			0xE0200064
+
+
+#define GPH0CON 		0xE0200C00
+#define GPH1CON 		0xE0200C20
+#define GPH2CON 		0xE0200C40
+#define GPH3CON 		0xE0200C60
+
+/*串口*/
+#define GPA0CON			0xE0200000
+#define GPA1CON			0xE0200020
+
+#define UART0_BASE 		0xE2900000
+#define UART1_BASE		0xE2900400
+#define UART2_BASE		0xE2900800
+#define UART3_BASE		0xE2900C00
+
+#define ULCON 			0x00
+#define UCON            0x04 
+#define UFCON 			0x08
+#define UTRSTAT         0x10
+#define	UTXH            0x20
+#define URXH            0x24 
+#define UBRDIV          0x28
+#define UDIVSLOT        0x2C 
+
+#define WORK_UART		UART0
+#define BAUDRATE		115200
+
+/*中断相关*/
+#define VIC0IRQSTATUS	0xF2000000
+#define VIC1IRQSTATUS	0xF2100000
+#define VIC2IRQSTATUS	0xF2200000
+#define VIC3IRQSTATUS	0xF2300000
+
+#define VIC0INTSELECT	0xF200000C
+#define VIC1INTSELECT	0xF210000C
+#define VIC2INTSELECT	0xF220000C
+#define VIC3INTSELECT	0xF230000C
+
+#define VIC0INTENABLE   0xF2000010
+#define VIC1INTENABLE   0xF2100010
+#define VIC2INTENABLE   0xF2200010
+#define VIC3INTENABLE   0xF2300010
+
+#define VIC0INTENCLEAR	0xF2000014
+#define VIC1INTENCLEAR	0xF2100014
+#define VIC2INTENCLEAR	0xF2200014
+#define VIC3INTENCLEAR	0xF2300014
+
+#define VIC0ADDRESS  	0xF2000F00
+#define VIC1ADDRESS  	0xF2100F00
+#define VIC2ADDRESS  	0xF2200F00
+#define VIC3ADDRESS  	0xF2300F00
+
+/*外部中断挂起寄存器*/
+#define EXT_INT_0_CON 	0xE0200E00
+#define EXT_INT_1_CON 	0xE0200E04
+#define EXT_INT_2_CON 	0xE0200E08
+#define EXT_INT_3_CON 	0xE0200E0C
+
+#define EXT_INT_0_MASK	0xE0200F00
+#define EXT_INT_1_MASK	0xE0200F04
+#define EXT_INT_2_MASK	0xE0200F08
+#define EXT_INT_3_MASK	0xE0200F0C
+
+#define EXT_INT_0_PEND	0xE0200F40
+#define EXT_INT_1_PEND	0xE0200F44
+#define EXT_INT_2_PEND	0xE0200F48
+#define EXT_INT_3_PEND	0xE0200F4C
+
+
+/*定时器相关*/
+#define TINT_CSTAT		0xE2500044
+
+#define	TCFG			0xE2600000
+#define	TCON      		0xE2600004
+#define	TICNTB    		0xE2600008
+#define	TICNTO    		0xE260000C
+#define TFCNTB 			0xE2600010
+#define ICNTB			0xE2600018
+#define	ICNTO			0xE260001C
+#define	INT_CSTAT		0xE2600020
+
+#endif
+
+#endif

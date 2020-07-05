@@ -1,0 +1,954 @@
+CCBUILDPATH	build\lmosemdrv.mk	/^CCBUILDPATH	= ..\/driver\/$/;"	m
+HEADFILE_PATH	build\lmosemdrv.mk	/^HEADFILE_PATH = -I ..\/include -I ..\/include\/commoninc -I ..\/include\/halinc -I ..\/include\/krnlinc -I ..\/include\/drvinc -I ..\/include\/libinc$/;"	m
+MAKEFLAGS	build\lmosemdrv.mk	/^MAKEFLAGS = -s$/;"	m
+dep_file	build\lmosemdrv.mk	/^dep_file = .$@.d$/;"	m
+dep_files	build\lmosemdrv.mk	/^dep_files := $(foreach f,$(BUILD_MK_DRIV_OBJS),.$(f).d)$/;"	m
+dep_files	build\lmosemdrv.mk	/^dep_files := $(wildcard $(dep_files))$/;"	m
+CCBUILDPATH	build\lmosemhal.mk	/^CCBUILDPATH	= ..\/hal\/$/;"	m
+HEADFILE_PATH	build\lmosemhal.mk	/^HEADFILE_PATH = -I ..\/include -I ..\/include\/commoninc -I ..\/include\/halinc -I ..\/include\/krnlinc -I ..\/include\/drvinc -I ..\/include\/libinc$/;"	m
+MAKEFLAGS	build\lmosemhal.mk	/^MAKEFLAGS = -s$/;"	m
+dep_file	build\lmosemhal.mk	/^dep_file = .$@.d$/;"	m
+dep_files	build\lmosemhal.mk	/^dep_files := $(foreach f,$(BUILD_MK_HALY_OBJS),.$(f).d)$/;"	m
+dep_files	build\lmosemhal.mk	/^dep_files := $(wildcard $(dep_files))$/;"	m
+CCBUILDPATH	build\lmosemkrl.mk	/^CCBUILDPATH	= ..\/kernel\/$/;"	m
+HEADFILE_PATH	build\lmosemkrl.mk	/^HEADFILE_PATH = -I ..\/include -I ..\/include\/commoninc -I ..\/include\/halinc -I ..\/include\/krnlinc -I ..\/include\/drvinc -I ..\/include\/libinc$/;"	m
+MAKEFLAGS	build\lmosemkrl.mk	/^MAKEFLAGS = -s$/;"	m
+dep_file	build\lmosemkrl.mk	/^dep_file = .$@.d$/;"	m
+dep_files	build\lmosemkrl.mk	/^dep_files := $(foreach f,$(BUILD_MK_KRNL_OBJS),.$(f).d)$/;"	m
+dep_files	build\lmosemkrl.mk	/^dep_files := $(wildcard $(dep_files))$/;"	m
+CCBUILDPATH	build\lmosemlib.mk	/^CCBUILDPATH	= ..\/lib\/$/;"	m
+HEADFILE_PATH	build\lmosemlib.mk	/^HEADFILE_PATH = -I ..\/include -I ..\/include\/commoninc -I ..\/include\/libinc$/;"	m
+MAKEFLAGS	build\lmosemlib.mk	/^MAKEFLAGS = -s$/;"	m
+dep_file	build\lmosemlib.mk	/^dep_file = .$@.d$/;"	m
+dep_files	build\lmosemlib.mk	/^dep_files := $(foreach f,$(BUILD_MK_LIBS_OBJS),.$(f).d)$/;"	m
+dep_files	build\lmosemlib.mk	/^dep_files := $(wildcard $(dep_files))$/;"	m
+LDFLAGS	build\lmosemlink.mk	/^LDFLAGS := --strip-debug -Map $(TARGET).map					#去除调试信息$/;"	m
+MAKEFLAGS	build\lmosemlink.mk	/^MAKEFLAGS = -s$/;"	m
+TARGET	build\lmosemlink.mk	/^TARGET :=          	emoskrnl$/;"	m
+TARGET_BIN_FILE	build\lmosemlink.mk	/^TARGET_BIN_FILE :=  $(TARGET).bin$/;"	m
+TARGET_ELF_FILE	build\lmosemlink.mk	/^TARGET_ELF_FILE :=  $(TARGET).elf$/;"	m
+CCBUILDPATH	build\lmosemtask.mk	/^CCBUILDPATH	= $(KERNELCE_PATH)$/;"	m
+HEADFILE_PATH	build\lmosemtask.mk	/^HEADFILE_PATH = -I ..\/include -I ..\/include\/bastypeinc -I ..\/include\/halinc -I ..\/include\/knlinc -I ..\/include\/libinc -I ..\/include\/drvinc$/;"	m
+KERNELCE_PATH	build\lmosemtask.mk	/^KERNELCE_PATH	= ..\/task\/$/;"	m
+MAKEFLAGS	build\lmosemtask.mk	/^MAKEFLAGS = -s$/;"	m
+systick_drv_init	driver\drvsystick.c	/^drvstus_t systick_drv_init(void)$/;"	f
+systick_handle	driver\drvsystick.c	/^void systick_handle(uint_t irq, void *data)$/;"	f
+systick_init	driver\drvsystick.c	/^private void systick_init(void)$/;"	f
+systick_open	driver\drvsystick.c	/^int systick_open(device_t *dev)$/;"	f
+systick_ops	driver\drvsystick.c	/^struct drv_operations systick_ops = {$/;"	v	typeref:struct:drv_operations
+Ldiv0	hal\_divsi3.S	/^Ldiv0:$/;"	l
+__aeabi_idiv	hal\_divsi3.S	/^__aeabi_idiv:$/;"	l
+__divsi3	hal\_divsi3.S	/^__divsi3:$/;"	l
+Ldiv0	hal\_modsi3.S	/^Ldiv0:$/;"	l
+__modsi3	hal\_modsi3.S	/^__modsi3:$/;"	l
+Lbignum	hal\_udivsi3.S	/^Lbignum:$/;"	l
+Ldiv0	hal\_udivsi3.S	/^Ldiv0:$/;"	l
+Lgot_result	hal\_udivsi3.S	/^Lgot_result:$/;"	l
+Loop1	hal\_udivsi3.S	/^Loop1:$/;"	l
+Loop3	hal\_udivsi3.S	/^Loop3:$/;"	l
+__aeabi_idivmod	hal\_udivsi3.S	/^__aeabi_idivmod:$/;"	l
+__aeabi_uidiv	hal\_udivsi3.S	/^ __aeabi_uidiv:$/;"	l
+__aeabi_uidivmod	hal\_udivsi3.S	/^__aeabi_uidivmod:$/;"	l
+__udivsi3	hal\_udivsi3.S	/^ __udivsi3:$/;"	l
+curbit	hal\_udivsi3.S	/^curbit		.req	r3$/;"	l
+dividend	hal\_udivsi3.S	/^dividend	.req	r0$/;"	l
+divisor	hal\_udivsi3.S	/^divisor		.req	r1$/;"	l
+result	hal\_udivsi3.S	/^result		.req	r2$/;"	l
+Lbignum	hal\_umodsi3.S	/^Lbignum:$/;"	l
+Ldiv0	hal\_umodsi3.S	/^Ldiv0:$/;"	l
+Loop1	hal\_umodsi3.S	/^Loop1:$/;"	l
+Loop3	hal\_umodsi3.S	/^Loop3:$/;"	l
+curbit	hal\_umodsi3.S	/^curbit		.req	r3$/;"	l
+dividend	hal\_umodsi3.S	/^dividend	.req	r0$/;"	l
+divisor	hal\_umodsi3.S	/^divisor		.req	r1$/;"	l
+overdone	hal\_umodsi3.S	/^overdone	.req	r2$/;"	l
+raw_local_fiq_disable	hal\cpuctrl.c	/^cpuflg_t raw_local_fiq_disable(void)$/;"	f
+raw_local_fiqirq_disable	hal\cpuctrl.c	/^cpuflg_t raw_local_fiqirq_disable(void)$/;"	f
+raw_local_irq_disable	hal\cpuctrl.c	/^cpuflg_t raw_local_irq_disable(void)$/;"	f
+__div0	hal\div0.c	/^void __div0 (void)$/;"	f
+hal_board_dscp_init	hal\halboarddsc.c	/^void hal_board_dscp_init(void)$/;"	f
+hal_board_dscp_print	hal\halboarddsc.c	/^void hal_board_dscp_print(void)$/;"	f
+HAL_GLOBAL_VAR	hal\halglobal.c	1;"	d	file:
+hal_init	hal\halinit.c	/^LKHEAD_T void hal_init(void)$/;"	f
+hal_clear_irqpnd	hal\halinterrupt.c	/^bool_t hal_clear_irqpnd(uint_t int_nr)$/;"	f
+hal_clear_vectaddr	hal\halinterrupt.c	/^private void hal_clear_vectaddr(void)$/;"	f
+hal_disalbe_irq	hal\halinterrupt.c	/^bool_t hal_disalbe_irq(uint_t int_nr)$/;"	f
+hal_enalbe_irq	hal\halinterrupt.c	/^bool_t hal_enalbe_irq(uint_t int_nr)$/;"	f
+hal_exit_mode_init	hal\halinterrupt.c	/^void hal_exit_mode_init(uint_t int_nr, uint_t flag)$/;"	f
+hal_getvicirqstatus	hal\halinterrupt.c	/^u32_t hal_getvicirqstatus(u32_t vicnr)$/;"	f
+hal_interrupt_init	hal\halinterrupt.c	/^void hal_interrupt_init(void)$/;"	f
+hal_rtn_exitregmap	hal\halinterrupt.c	/^exitreg_map_t *hal_rtn_exitregmap(uint_t int_nr)$/;"	f
+hal_rtn_intdscp	hal\halinterrupt.c	/^interrupt_dscp_t *hal_rtn_intdscp(uint_t int_nr)$/;"	f
+interrupt_dscp_init	hal\halinterrupt.c	/^private void interrupt_dscp_init(interrupt_dscp_t *ptr, u32_t status, u32_t flag, u32_t pndbitnr, uint_t int_nr)$/;"	f
+alloc_mem_list_init	hal\halmm.c	/^private void alloc_mem_list_init(alloc_mem_list_t *list, size_t size)$/;"	f
+bd_dscp_insert_tlb	hal\halmm.c	/^void bd_dscp_insert_tlb(mmap_dscp_t *dp, mmap_tlb_t *tlb_ptr, uint_t am_flag)$/;"	f
+blk_mem_test2	hal\halmm.c	/^void blk_mem_test2(void)$/;"	f
+blk_print_4M_cnt	hal\halmm.c	/^uint_t blk_print_4M_cnt(void)$/;"	f
+hal_allocblks	hal\halmm.c	/^private adr_t hal_allocblks(uint_t mflag, uint_t mask, uint_t bits, alloc_mem_list_t *src_list, alloc_mem_list_t *dest_list)$/;"	f
+hal_find_allocblks	hal\halmm.c	/^private adr_t hal_find_allocblks(alloc_mem_list_t *src_list, alloc_mem_list_t *dest_list, size_t blksz)$/;"	f
+hal_find_freeblks	hal\halmm.c	/^private bool_t hal_find_freeblks(adr_t freeaddr, alloc_mem_list_t *src_list, alloc_mem_list_t *dest_list, size_t blksz)$/;"	f
+hal_find_suitable_allocdscp	hal\halmm.c	/^private mmap_dscp_t *hal_find_suitable_allocdscp(alloc_mem_list_t *list)$/;"	f
+hal_find_suitable_alloclist	hal\halmm.c	/^private alloc_mem_list_t *hal_find_suitable_alloclist(mmap_tlb_t *tlb_ptr, alloc_mem_list_t **list, size_t blksz)$/;"	f
+hal_find_suitable_freedscp	hal\halmm.c	/^private mmap_dscp_t *hal_find_suitable_freedscp(alloc_mem_list_t *list, adr_t freeaddr)$/;"	f
+hal_find_suitable_freelist	hal\halmm.c	/^private alloc_mem_list_t *hal_find_suitable_freelist(mmap_tlb_t *tlb_ptr, size_t blksz)$/;"	f
+hal_freeblks	hal\halmm.c	/^private bool_t hal_freeblks(adr_t freeaddr, uint_t mflag, uint_t mask, alloc_mem_list_t *src_list, alloc_mem_list_t *dest_list)$/;"	f
+hal_memallocblks	hal\halmm.c	/^adr_t hal_memallocblks(size_t blksz)$/;"	f
+hal_memfreeblks	hal\halmm.c	/^bool_t hal_memfreeblks(adr_t freeaddr, size_t blksz)$/;"	f
+hal_mm_init	hal\halmm.c	/^void hal_mm_init(void)$/;"	f
+hal_mmap_dscp_init	hal\halmm.c	/^private void hal_mmap_dscp_init(board_dscp_t *bd_ptr)$/;"	f
+hal_mmap_tlb_init	hal\halmm.c	/^private void hal_mmap_tlb_init(board_dscp_t *bd_ptr, mmap_tlb_t *tlb_ptr)$/;"	f
+hal_verify_krnl_dscp	hal\halmm.c	/^private void hal_verify_krnl_dscp(board_dscp_t *bd_ptr, mmap_tlb_t *tlb_ptr)$/;"	f
+mmap_dscp_4M_init	hal\halmm.c	/^private uint_t mmap_dscp_4M_init(mmap_dscp_t *dp, adr_t start, adr_t end, uint_t crt_index)$/;"	f
+mmap_dscp_init	hal\halmm.c	/^void mmap_dscp_init(mmap_dscp_t *dp, adr_t start, adr_t end, u32_t alloc_bit, u32_t flag)$/;"	f
+mmap_tlb_init	hal\halmm.c	/^void mmap_tlb_init(mmap_tlb_t *tlb_ptr)$/;"	f
+UDIVSLOTn_NUM	hal\haluart.c	/^u32_t UDIVSLOTn_NUM[] = {0x0000, 0x0080, 0x0808, 0x0888, 0x2222, 0x4924, 0x4A52, 0x54AA,$/;"	v
+hal_uart_init	hal\haluart.c	/^void hal_uart_init(void)$/;"	f
+uart_base	hal\haluart.c	/^volatile adr_t uart_base; $/;"	v
+uart_init	hal\haluart.c	/^void uart_init (UARTn uratn, u32_t baud)$/;"	f
+uart_recv_byte	hal\haluart.c	/^u8_t uart_recv_byte(UARTn uratn)$/;"	f
+uart_send_byte	hal\haluart.c	/^void uart_send_byte(UARTn uratn, u8_t byte)$/;"	f
+_start	hal\init.S	/^_start:$/;"	l
+clean_bss	hal\init.S	/^clean_bss:$/;"	l
+clean_loop	hal\init.S	/^clean_loop:	cmp r0, r1$/;"	l
+hal_data_abrot	hal\interrupt.S	/^hal_data_abrot:$/;"	l
+hal_fiq	hal\interrupt.S	/^hal_fiq:$/;"	l
+hal_irq	hal\interrupt.S	/^hal_irq:$/;"	l
+hal_prefetch_abrot	hal\interrupt.S	/^hal_prefetch_abrot:$/;"	l
+hal_swi	hal\interrupt.S	/^hal_swi:$/;"	l
+hal_undefine	hal\interrupt.S	/^hal_undefine:$/;"	l
+no_use	hal\interrupt.S	/^no_use:$/;"	l
+hal_dataabort_handle	hal\interruptdeal.c	/^void hal_dataabort_handle(void)$/;"	f
+hal_do_irqhandle	hal\interruptdeal.c	/^private void hal_do_irqhandle(uint_t intnr)$/;"	f
+hal_fiq_handle	hal\interruptdeal.c	/^void hal_fiq_handle(void)$/;"	f
+hal_irq_handle	hal\interruptdeal.c	/^void hal_irq_handle(void)$/;"	f
+hal_prefeabort_handle	hal\interruptdeal.c	/^void hal_prefeabort_handle(void)$/;"	f
+hal_swi_handle	hal\interruptdeal.c	/^void  hal_swi_handle(uint_t intnr)$/;"	f
+hal_undefine_handle	hal\interruptdeal.c	/^void hal_undefine_handle(void)$/;"	f
+led_change_status	hal\led.c	/^void led_change_status(s32_t status)$/;"	f
+led_init	hal\led.c	/^void led_init(void)$/;"	f
+lmosemhal_start	hal\lmosemhal_start.c	/^LKHEAD_T void lmosemhal_start(void)$/;"	f
+platform_init	hal\platforminit.c	/^LKHEAD_T void platform_init(void)$/;"	f
+s5pv210_disable_mmu	hal\platforminit.c	/^LKHEAD_T void s5pv210_disable_mmu(void)$/;"	f
+s5pv210_enable_cache	hal\platforminit.c	/^LKHEAD_T void s5pv210_enable_cache(void)$/;"	f
+s5pv210_enable_mmu	hal\platforminit.c	/^LKHEAD_T void s5pv210_enable_mmu(void)$/;"	f
+s5pv210_invalid_tlb_cache	hal\platforminit.c	/^LKHEAD_T void s5pv210_invalid_tlb_cache(void)$/;"	f
+s5pv210_mmu_init	hal\platforminit.c	/^LKHEAD_T void s5pv210_mmu_init(void)$/;"	f
+s5pv210_set_domain	hal\platforminit.c	/^LKHEAD_T void s5pv210_set_domain(uint_t domain)$/;"	f
+s5pv210_set_ttb	hal\platforminit.c	/^LKHEAD_T void s5pv210_set_ttb(uint_t ttb_phy_addr)$/;"	f
+s5pv210_set_vector_base	hal\platforminit.c	/^LKHEAD_T void s5pv210_set_vector_base(uint_t addr)$/;"	f
+s5pv210_vector_init	hal\platforminit.c	/^LKHEAD_T void s5pv210_vector_init(void)$/;"	f
+printk	hal\printk.c	/^void printk(const s8_t *fmt, ...)$/;"	f
+uart_getchar	hal\printk.c	/^s32_t uart_getchar(UARTn uratn)$/;"	f
+uart_put_hex	hal\printk.c	/^private void uart_put_hex(UARTn uratn, u8_t v, u8_t small)$/;"	f
+uart_put_int	hal\printk.c	/^private void uart_put_int(UARTn uratn, u32_t v)$/;"	f
+uart_put_int_hex	hal\printk.c	/^private void uart_put_int_hex(UARTn uratn, u32_t v, u8_t small)$/;"	f
+uart_putchar	hal\printk.c	/^void uart_putchar(UARTn uratn, u8_t c)$/;"	f
+uart_puts	hal\printk.c	/^void uart_puts(UARTn uratn, s8_t *str)$/;"	f
+hal_data_abrot_l	hal\vector.S	/^hal_data_abrot_l: .word hal_data_abrot$/;"	l
+hal_fiq_l	hal\vector.S	/^hal_fiq_l: .word hal_fiq$/;"	l
+hal_irq_l	hal\vector.S	/^hal_irq_l: .word hal_irq$/;"	l
+hal_prefetch_abrot_l	hal\vector.S	/^hal_prefetch_abrot_l: .word hal_prefetch_abrot$/;"	l
+hal_start_l	hal\vector.S	/^hal_start_l: .word _start$/;"	l
+hal_swi_l	hal\vector.S	/^hal_swi_l: .word hal_swi$/;"	l
+hal_undefine_l	hal\vector.S	/^hal_undefine_l: .word hal_undefine$/;"	l
+no_use_l	hal\vector.S	/^no_use_l: .word no_use$/;"	l
+vector	hal\vector.S	/^vector:$/;"	l
+ALIGN	include\commoninc\basetype.h	48;"	d
+DFCERRSTUS	include\commoninc\basetype.h	45;"	d
+DFCOKSTUS	include\commoninc\basetype.h	46;"	d
+EXTERN	include\commoninc\basetype.h	40;"	d
+FALSE	include\commoninc\basetype.h	44;"	d
+KEXTERN	include\commoninc\basetype.h	41;"	d
+KLINE	include\commoninc\basetype.h	37;"	d
+LKHEAD_D	include\commoninc\basetype.h	51;"	d
+LKHEAD_T	include\commoninc\basetype.h	50;"	d
+NO_HAND	include\commoninc\basetype.h	47;"	d
+NULL	include\commoninc\basetype.h	42;"	d
+PUBLIC	include\commoninc\basetype.h	38;"	d
+TRUE	include\commoninc\basetype.h	43;"	d
+__BASETYPE_H__	include\commoninc\basetype.h	2;"	d
+adr_t	include\commoninc\basetype.h	/^typedef unsigned long adr_t;$/;"	t
+bool_t	include\commoninc\basetype.h	/^typedef sint_t bool_t;$/;"	t
+buf_t	include\commoninc\basetype.h	/^typedef void* buf_t;$/;"	t
+char_t	include\commoninc\basetype.h	/^typedef char char_t;$/;"	t
+cpuflg_t	include\commoninc\basetype.h	/^typedef u32_t cpuflg_t;$/;"	t
+dev_t	include\commoninc\basetype.h	/^typedef u32_t dev_t;$/;"	t
+drv_t	include\commoninc\basetype.h	/^typedef unsigned long drv_t;$/;"	t
+drvfunc_t	include\commoninc\basetype.h	/^typedef drvstus_t (*drvfunc_t)(void);$/;"	t
+drvstus_t	include\commoninc\basetype.h	/^typedef sint_t drvstus_t;$/;"	t
+hand_t	include\commoninc\basetype.h	/^typedef sint_t hand_t;$/;"	t
+irq_handler_t	include\commoninc\basetype.h	/^typedef void (*irq_handler_t)(uint_t, void *);$/;"	t
+mrv_t	include\commoninc\basetype.h	/^typedef unsigned long mrv_t;$/;"	t
+private	include\commoninc\basetype.h	39;"	d
+reg_t	include\commoninc\basetype.h	/^typedef u32_t reg_t;$/;"	t
+s16_t	include\commoninc\basetype.h	/^typedef short s16_t;$/;"	t
+s32_t	include\commoninc\basetype.h	/^typedef int s32_t;$/;"	t
+s64_t	include\commoninc\basetype.h	/^typedef long long  s64_t;$/;"	t
+s8_t	include\commoninc\basetype.h	/^typedef char s8_t;$/;"	t
+sint_t	include\commoninc\basetype.h	/^typedef long sint_t;$/;"	t
+size_t	include\commoninc\basetype.h	/^typedef unsigned long size_t;$/;"	t
+str_t	include\commoninc\basetype.h	/^typedef const char* str_t;$/;"	t
+sysstus_t	include\commoninc\basetype.h	/^typedef sint_t sysstus_t;$/;"	t
+u16_t	include\commoninc\basetype.h	/^typedef unsigned short u16_t;$/;"	t
+u32_t	include\commoninc\basetype.h	/^typedef unsigned int u32_t;$/;"	t
+u64_t	include\commoninc\basetype.h	/^typedef unsigned long long u64_t;$/;"	t
+u8_t	include\commoninc\basetype.h	/^typedef unsigned char u8_t;$/;"	t
+uint_t	include\commoninc\basetype.h	/^typedef unsigned long uint_t;$/;"	t
+ARRAY_SIZE	include\commoninc\common.h	8;"	d
+__COMMON_H__	include\commoninc\common.h	2;"	d
+LIST_HEAD	include\commoninc\list.h	10;"	d
+LIST_HEAD_INIT	include\commoninc\list.h	8;"	d
+__LIST_H__	include\commoninc\list.h	2;"	d
+__list_add	include\commoninc\list.h	/^KLINE void __list_add(struct list_head *new,$/;"	f
+__list_del	include\commoninc\list.h	/^KLINE void __list_del(struct list_head * prev, struct list_head * next)$/;"	f
+__list_del_entry	include\commoninc\list.h	/^KLINE void __list_del_entry(struct list_head *entry)$/;"	f
+container_of	include\commoninc\list.h	206;"	d
+init_list_head	include\commoninc\list.h	/^KLINE void init_list_head(struct list_head *list)$/;"	f
+list_add	include\commoninc\list.h	/^KLINE void list_add(struct list_head *new, struct list_head *head)$/;"	f
+list_add_tail	include\commoninc\list.h	/^KLINE void list_add_tail(struct list_head *new, struct list_head *head)$/;"	f
+list_del	include\commoninc\list.h	/^KLINE void list_del(struct list_head *entry)$/;"	f
+list_del_init	include\commoninc\list.h	/^KLINE void list_del_init(struct list_head *entry)$/;"	f
+list_empty	include\commoninc\list.h	/^KLINE int list_empty(const struct list_head *head)$/;"	f
+list_empty_careful	include\commoninc\list.h	/^KLINE int list_empty_careful(const struct list_head *head)$/;"	f
+list_entry	include\commoninc\list.h	209;"	d
+list_for_each	include\commoninc\list.h	193;"	d
+list_for_each_prev	include\commoninc\list.h	201;"	d
+list_head	include\commoninc\list.h	/^struct list_head {$/;"	s
+list_is_last	include\commoninc\list.h	/^KLINE int list_is_last(const struct list_head *list,$/;"	f
+list_move	include\commoninc\list.h	/^KLINE void list_move(struct list_head *list, struct list_head *head)$/;"	f
+list_move_tail	include\commoninc\list.h	/^KLINE void list_move_tail(struct list_head *list,$/;"	f
+list_replace	include\commoninc\list.h	/^KLINE void list_replace(struct list_head *old,$/;"	f
+list_replace_init	include\commoninc\list.h	/^KLINE void list_replace_init(struct list_head *old,$/;"	f
+next	include\commoninc\list.h	/^	struct list_head *next, *prev;$/;"	m	struct:list_head	typeref:struct:list_head::list_head
+offsetof	include\commoninc\list.h	204;"	d
+prev	include\commoninc\list.h	/^	struct list_head *next, *prev;$/;"	m	struct:list_head	typeref:struct:list_head::
+__SEM_H__	include\commoninc\sem.h	2;"	d
+DEFINE_SPINLOCK	include\commoninc\spinlock.h	44;"	d
+__SPINLOCK_H__	include\commoninc\spinlock.h	2;"	d
+__SPIN_LOCK_UNLOCKED	include\commoninc\spinlock.h	47;"	d
+rlock	include\commoninc\spinlock.h	/^	volatile u32_t rlock;$/;"	m	struct:spinklock
+spin_lock_save	include\commoninc\spinlock.h	17;"	d
+spin_lock_save	include\commoninc\spinlock.h	31;"	d
+spin_unlock_restore	include\commoninc\spinlock.h	24;"	d
+spin_unlock_restore	include\commoninc\spinlock.h	37;"	d
+spinklock	include\commoninc\spinlock.h	/^typedef struct spinklock$/;"	s
+spinlock_t	include\commoninc\spinlock.h	/^}spinlock_t;$/;"	t	typeref:struct:spinklock
+CFG_S5PV210_PLATFORM	include\config.h	4;"	d
+__CONFIG_H__	include\config.h	2;"	d
+__DRV_H__	include\drvinc\drv.h	2;"	d
+__DRVSYSTICK_H__	include\drvinc\drvsystick.h	2;"	d
+__CPU_H__	include\halinc\cpu.h	2;"	d
+armreg	include\halinc\cpu.h	/^typedef struct armreg$/;"	s
+armreg_t	include\halinc\cpu.h	/^}armreg_t;$/;"	t	typeref:struct:armreg
+lr	include\halinc\cpu.h	/^	reg_t lr;$/;"	m	struct:armreg
+r0	include\halinc\cpu.h	/^	reg_t r0;$/;"	m	struct:armreg
+r1	include\halinc\cpu.h	/^	reg_t r1;$/;"	m	struct:armreg
+r10	include\halinc\cpu.h	/^	reg_t r10;$/;"	m	struct:armreg
+r11	include\halinc\cpu.h	/^	reg_t r11;$/;"	m	struct:armreg
+r12	include\halinc\cpu.h	/^	reg_t r12;$/;"	m	struct:armreg
+r2	include\halinc\cpu.h	/^	reg_t r2;$/;"	m	struct:armreg
+r3	include\halinc\cpu.h	/^	reg_t r3;$/;"	m	struct:armreg
+r4	include\halinc\cpu.h	/^	reg_t r4;$/;"	m	struct:armreg
+r5	include\halinc\cpu.h	/^	reg_t r5;$/;"	m	struct:armreg
+r6	include\halinc\cpu.h	/^	reg_t r6;$/;"	m	struct:armreg
+r7	include\halinc\cpu.h	/^	reg_t r7;$/;"	m	struct:armreg
+r8	include\halinc\cpu.h	/^	reg_t r8;$/;"	m	struct:armreg
+r9	include\halinc\cpu.h	/^	reg_t r9;$/;"	m	struct:armreg
+sp	include\halinc\cpu.h	/^	reg_t sp;$/;"	m	struct:armreg
+FIQMASK	include\halinc\cpuctrl.h	5;"	d
+IRQMASK	include\halinc\cpuctrl.h	4;"	d
+__CPUIO_H__	include\halinc\cpuctrl.h	2;"	d
+barrier	include\halinc\cpuctrl.h	7;"	d
+get_cpsr	include\halinc\cpuctrl.h	/^KLINE cpuflg_t get_cpsr(void)$/;"	f
+get_sp	include\halinc\cpuctrl.h	/^KLINE cpuflg_t get_sp(void)$/;"	f
+get_spsr	include\halinc\cpuctrl.h	/^KLINE cpuflg_t get_spsr(void)$/;"	f
+hal_rtn_cpuid	include\halinc\cpuctrl.h	/^KLINE uint_t hal_rtn_cpuid(void)$/;"	f
+local_fiq_disable	include\halinc\cpuctrl.h	21;"	d
+local_fiq_restore	include\halinc\cpuctrl.h	24;"	d
+local_fiqirq_disable	include\halinc\cpuctrl.h	27;"	d
+local_fiqirq_restore	include\halinc\cpuctrl.h	30;"	d
+local_irq_disable	include\halinc\cpuctrl.h	15;"	d
+local_irq_restore	include\halinc\cpuctrl.h	18;"	d
+preempt_disable	include\halinc\cpuctrl.h	9;"	d
+prefetchw	include\halinc\cpuctrl.h	12;"	d
+raw_local_cpuflag_restore	include\halinc\cpuctrl.h	/^KLINE void raw_local_cpuflag_restore(cpuflg_t flags)$/;"	f
+raw_spinlock_lock	include\halinc\cpuctrl.h	/^KLINE void raw_spinlock_lock(spinlock_t *lock)$/;"	f
+raw_spinlock_unlock	include\halinc\cpuctrl.h	/^KLINE void raw_spinlock_unlock(spinlock_t* lock)$/;"	f
+readb	include\halinc\cpuctrl.h	/^KLINE u8_t readb(uint_t addr)$/;"	f
+readl	include\halinc\cpuctrl.h	/^KLINE u32_t readl(uint_t addr)$/;"	f
+readw	include\halinc\cpuctrl.h	/^KLINE u16_t readw(uint_t addr)$/;"	f
+spin_lock_init	include\halinc\cpuctrl.h	/^KLINE void spin_lock_init(spinlock_t* lock)$/;"	f
+writeb	include\halinc\cpuctrl.h	/^KLINE void writeb(uint_t addr, u8_t dat)$/;"	f
+writel	include\halinc\cpuctrl.h	/^KLINE void writel(uint_t addr, u32_t dat)$/;"	f
+writew	include\halinc\cpuctrl.h	/^KLINE void writew(uint_t addr, u16_t dat)$/;"	f
+__HAL_H__	include\halinc\hal.h	2;"	d
+__HALBOARDDSC_H__	include\halinc\halboarddsc.h	2;"	d
+adrspce_baseaddr	include\halinc\halboarddsc.h	/^	adrspce_dscp_t *adrspce_baseaddr;				\/*物理地址空间基地址*\/$/;"	m	struct:board_dscp
+adrspce_cnt	include\halinc\halboarddsc.h	/^	uint_t adrspce_cnt;								\/*物理地址空间块个数*\/$/;"	m	struct:board_dscp
+bd_krnlendaddr	include\halinc\halboarddsc.h	/^	adr_t bd_krnlendaddr;							\/*内核结束地址*\/$/;"	m	struct:board_dscp
+bd_krnlstartaddr	include\halinc\halboarddsc.h	/^	adr_t bd_krnlstartaddr;							\/*内核起始地址*\/$/;"	m	struct:board_dscp
+bd_list	include\halinc\halboarddsc.h	/^	struct list_head bd_list;						\/*链表*\/$/;"	m	struct:board_dscp	typeref:struct:board_dscp::list_head
+bd_lock	include\halinc\halboarddsc.h	/^	spinlock_t bd_lock;								\/*自旋锁*\/$/;"	m	struct:board_dscp
+board_dscp	include\halinc\halboarddsc.h	/^typedef struct board_dscp$/;"	s
+board_dscp_t	include\halinc\halboarddsc.h	/^}board_dscp_t;$/;"	t	typeref:struct:board_dscp
+irq_dscp_baseaddr	include\halinc\halboarddsc.h	/^	interrupt_dscp_t *irq_dscp_baseaddr;			\/*中断描述符基地址*\/$/;"	m	struct:board_dscp
+irqsource_cnt	include\halinc\halboarddsc.h	/^	uint_t irqsource_cnt;							\/*中断源个数*\/$/;"	m	struct:board_dscp
+mmap_baseaddr	include\halinc\halboarddsc.h	/^	mmap_dscp_t	*mmap_baseaddr;						\/*内存位图基地址*\/$/;"	m	struct:board_dscp
+mmap_cnt	include\halinc\halboarddsc.h	/^	uint_t mmap_cnt;								\/*内存位图个数*\/$/;"	m	struct:board_dscp
+EXTERN	include\halinc\halglobal.h	5;"	d
+EXTERN	include\halinc\halglobal.h	6;"	d
+HAL_GLOBAL_VARIABLE	include\halinc\halglobal.h	9;"	d
+__HALGLOBAL_H__	include\halinc\halglobal.h	2;"	d
+__HALINIT_H__	include\halinc\halinit.h	2;"	d
+EINT16_31_FLAG	include\halinc\halinterrupt.h	146;"	d
+EINT_16_31	include\halinc\halinterrupt.h	131;"	d
+EXIT_GROUP_NUMBER	include\halinc\halinterrupt.h	130;"	d
+IRQF_SHARED	include\halinc\halinterrupt.h	157;"	d
+IRQF_STATUS_MASK	include\halinc\halinterrupt.h	158;"	d
+IRQF_TRIGGER_BOTH	include\halinc\halinterrupt.h	152;"	d
+IRQF_TRIGGER_FALLING	include\halinc\halinterrupt.h	150;"	d
+IRQF_TRIGGER_HIGH	include\halinc\halinterrupt.h	149;"	d
+IRQF_TRIGGER_LOW	include\halinc\halinterrupt.h	148;"	d
+IRQF_TRIGGER_MASK	include\halinc\halinterrupt.h	155;"	d
+IRQF_TRIGGER_NONE	include\halinc\halinterrupt.h	153;"	d
+IRQF_TRIGGER_RISING	include\halinc\halinterrupt.h	151;"	d
+IRQ_2D	include\halinc\halinterrupt.h	82;"	d
+IRQ_3D	include\halinc\halinterrupt.h	83;"	d
+IRQ_AC97	include\halinc\halinterrupt.h	92;"	d
+IRQ_ADC	include\halinc\halinterrupt.h	96;"	d
+IRQ_ADC1	include\halinc\halinterrupt.h	118;"	d
+IRQ_BATF	include\halinc\halinterrupt.h	20;"	d
+IRQ_CEC	include\halinc\halinterrupt.h	112;"	d
+IRQ_CFCON	include\halinc\halinterrupt.h	47;"	d
+IRQ_CG	include\halinc\halinterrupt.h	100;"	d
+IRQ_CORTEX1	include\halinc\halinterrupt.h	39;"	d
+IRQ_CORTEX2	include\halinc\halinterrupt.h	40;"	d
+IRQ_CORTEX3	include\halinc\halinterrupt.h	41;"	d
+IRQ_CORTEX4	include\halinc\halinterrupt.h	42;"	d
+IRQ_EINT	include\halinc\halinterrupt.h	127;"	d
+IRQ_FIMC0	include\halinc\halinterrupt.h	78;"	d
+IRQ_FIMC1	include\halinc\halinterrupt.h	79;"	d
+IRQ_FIMC2	include\halinc\halinterrupt.h	80;"	d
+IRQ_FIMC3	include\halinc\halinterrupt.h	34;"	d
+IRQ_GPIOINT	include\halinc\halinterrupt.h	33;"	d
+IRQ_HDMI	include\halinc\halinterrupt.h	85;"	d
+IRQ_HOSTIF	include\halinc\halinterrupt.h	110;"	d
+IRQ_HSIRX	include\halinc\halinterrupt.h	59;"	d
+IRQ_HSITX	include\halinc\halinterrupt.h	60;"	d
+IRQ_HSMMC0	include\halinc\halinterrupt.h	64;"	d
+IRQ_HSMMC1	include\halinc\halinterrupt.h	65;"	d
+IRQ_HSMMC2	include\halinc\halinterrupt.h	66;"	d
+IRQ_HSMMC3	include\halinc\halinterrupt.h	111;"	d
+IRQ_I2S0	include\halinc\halinterrupt.h	89;"	d
+IRQ_I2S1	include\halinc\halinterrupt.h	90;"	d
+IRQ_I2S2	include\halinc\halinterrupt.h	91;"	d
+IRQ_IEMAPC	include\halinc\halinterrupt.h	43;"	d
+IRQ_IEMIEC	include\halinc\halinterrupt.h	44;"	d
+IRQ_IIC	include\halinc\halinterrupt.h	52;"	d
+IRQ_IIC1	include\halinc\halinterrupt.h	86;"	d
+IRQ_IIC2	include\halinc\halinterrupt.h	57;"	d
+IRQ_IIC_HDMIPHY	include\halinc\halinterrupt.h	58;"	d
+IRQ_IPC	include\halinc\halinterrupt.h	109;"	d
+IRQ_IRDA	include\halinc\halinterrupt.h	56;"	d
+IRQ_JPEG	include\halinc\halinterrupt.h	81;"	d
+IRQ_KEYPAD	include\halinc\halinterrupt.h	99;"	d
+IRQ_LCD0	include\halinc\halinterrupt.h	73;"	d
+IRQ_LCD1	include\halinc\halinterrupt.h	74;"	d
+IRQ_LCD2	include\halinc\halinterrupt.h	75;"	d
+IRQ_LCD3	include\halinc\halinterrupt.h	76;"	d
+IRQ_MDMA	include\halinc\halinterrupt.h	21;"	d
+IRQ_MDNIE0	include\halinc\halinterrupt.h	114;"	d
+IRQ_MDNIE1	include\halinc\halinterrupt.h	115;"	d
+IRQ_MDNIE2	include\halinc\halinterrupt.h	116;"	d
+IRQ_MDNIE3	include\halinc\halinterrupt.h	117;"	d
+IRQ_MFC	include\halinc\halinterrupt.h	87;"	d
+IRQ_MIPIDSI	include\halinc\halinterrupt.h	68;"	d
+IRQ_MIPI_CSIS	include\halinc\halinterrupt.h	67;"	d
+IRQ_MIXER	include\halinc\halinterrupt.h	84;"	d
+IRQ_MSM	include\halinc\halinterrupt.h	63;"	d
+IRQ_NFC	include\halinc\halinterrupt.h	46;"	d
+IRQ_ONENAND	include\halinc\halinterrupt.h	45;"	d
+IRQ_ONENAND_AUDI	include\halinc\halinterrupt.h	69;"	d
+IRQ_OTG	include\halinc\halinterrupt.h	62;"	d
+IRQ_PCM0	include\halinc\halinterrupt.h	93;"	d
+IRQ_PCM1	include\halinc\halinterrupt.h	94;"	d
+IRQ_PCM2	include\halinc\halinterrupt.h	103;"	d
+IRQ_PDMA0	include\halinc\halinterrupt.h	22;"	d
+IRQ_PDMA1	include\halinc\halinterrupt.h	23;"	d
+IRQ_PENDN	include\halinc\halinterrupt.h	97;"	d
+IRQ_PENDN1	include\halinc\halinterrupt.h	119;"	d
+IRQ_PMU	include\halinc\halinterrupt.h	38;"	d
+IRQ_ROTATOR	include\halinc\halinterrupt.h	77;"	d
+IRQ_RTC_ALARM	include\halinc\halinterrupt.h	31;"	d
+IRQ_RTC_TIC	include\halinc\halinterrupt.h	32;"	d
+IRQ_SDMFIQ	include\halinc\halinterrupt.h	105;"	d
+IRQ_SDMIRQ	include\halinc\halinterrupt.h	104;"	d
+IRQ_SDO	include\halinc\halinterrupt.h	88;"	d
+IRQ_SPDIF	include\halinc\halinterrupt.h	95;"	d
+IRQ_SPI0	include\halinc\halinterrupt.h	53;"	d
+IRQ_SPI1	include\halinc\halinterrupt.h	54;"	d
+IRQ_SPI2	include\halinc\halinterrupt.h	55;"	d
+IRQ_SSS_HASH	include\halinc\halinterrupt.h	102;"	d
+IRQ_SSS_INT	include\halinc\halinterrupt.h	101;"	d
+IRQ_SYSTIMER	include\halinc\halinterrupt.h	29;"	d
+IRQ_TC	include\halinc\halinterrupt.h	98;"	d
+IRQ_TC1	include\halinc\halinterrupt.h	120;"	d
+IRQ_TIMER0_VIC	include\halinc\halinterrupt.h	24;"	d
+IRQ_TIMER1_VIC	include\halinc\halinterrupt.h	25;"	d
+IRQ_TIMER2_VIC	include\halinc\halinterrupt.h	26;"	d
+IRQ_TIMER3_VIC	include\halinc\halinterrupt.h	27;"	d
+IRQ_TIMER4_VIC	include\halinc\halinterrupt.h	28;"	d
+IRQ_TSI	include\halinc\halinterrupt.h	113;"	d
+IRQ_UART0	include\halinc\halinterrupt.h	48;"	d
+IRQ_UART1	include\halinc\halinterrupt.h	49;"	d
+IRQ_UART2	include\halinc\halinterrupt.h	50;"	d
+IRQ_UART3	include\halinc\halinterrupt.h	51;"	d
+IRQ_UHOST	include\halinc\halinterrupt.h	61;"	d
+IRQ_VIC_END	include\halinc\halinterrupt.h	121;"	d
+IRQ_WDT	include\halinc\halinterrupt.h	30;"	d
+MAIN_INT_FLAG	include\halinc\halinterrupt.h	145;"	d
+NR_IRQS	include\halinc\halinterrupt.h	134;"	d
+S5P_EINT_BASE1	include\halinc\halinterrupt.h	123;"	d
+S5P_EINT_BASE2	include\halinc\halinterrupt.h	124;"	d
+S5P_IRQ	include\halinc\halinterrupt.h	4;"	d
+S5P_IRQ_VIC0	include\halinc\halinterrupt.h	15;"	d
+S5P_IRQ_VIC1	include\halinc\halinterrupt.h	16;"	d
+S5P_IRQ_VIC2	include\halinc\halinterrupt.h	17;"	d
+S5P_IRQ_VIC3	include\halinc\halinterrupt.h	18;"	d
+S5P_VIC0_BASE	include\halinc\halinterrupt.h	6;"	d
+S5P_VIC1_BASE	include\halinc\halinterrupt.h	7;"	d
+S5P_VIC2_BASE	include\halinc\halinterrupt.h	8;"	d
+S5P_VIC3_BASE	include\halinc\halinterrupt.h	9;"	d
+VIC0_END	include\halinc\halinterrupt.h	137;"	d
+VIC0_START	include\halinc\halinterrupt.h	136;"	d
+VIC1_END	include\halinc\halinterrupt.h	139;"	d
+VIC1_START	include\halinc\halinterrupt.h	138;"	d
+VIC2_END	include\halinc\halinterrupt.h	141;"	d
+VIC2_START	include\halinc\halinterrupt.h	140;"	d
+VIC3_END	include\halinc\halinterrupt.h	143;"	d
+VIC3_START	include\halinc\halinterrupt.h	142;"	d
+VIC_BASE	include\halinc\halinterrupt.h	11;"	d
+__HALINTERRUPT_H__	include\halinc\halinterrupt.h	2;"	d
+con	include\halinc\halinterrupt.h	/^	adr_t con;					\/*gpio 配置寄存器*\/$/;"	m	struct:exitreg_map
+device	include\halinc\halinterrupt.h	/^	void *device;								\/*设备指针*\/$/;"	m	struct:interrupt_action
+exitreg_map	include\halinc\halinterrupt.h	/^typedef struct exitreg_map$/;"	s
+exitreg_map_t	include\halinc\halinterrupt.h	/^}exitreg_map_t;$/;"	t	typeref:struct:exitreg_map
+handle	include\halinc\halinterrupt.h	/^	irq_handler_t handle;						\/*中断回调函数*\/$/;"	m	struct:interrupt_action
+int_dscp	include\halinc\halinterrupt.h	/^	interrupt_dscp_t *int_dscp;					\/*中断描述符*\/$/;"	m	struct:interrupt_action
+int_flag	include\halinc\halinterrupt.h	/^	u32_t int_flag;								\/*中断标志（中断触发类型，中断是否可共享）*\/$/;"	m	struct:interrupt_action
+int_flag	include\halinc\halinterrupt.h	/^	u32_t int_flag;								\/*标记*\/$/;"	m	struct:interrupt_dscp
+int_list	include\halinc\halinterrupt.h	/^	struct list_head int_list;					\/*挂载中单服务函数*\/$/;"	m	struct:interrupt_dscp	typeref:struct:interrupt_dscp::list_head
+int_list	include\halinc\halinterrupt.h	/^	struct list_head int_list;					\/*挂载中断的链表*\/$/;"	m	struct:interrupt_action	typeref:struct:interrupt_action::list_head
+int_lock	include\halinc\halinterrupt.h	/^	spinlock_t int_lock;$/;"	m	struct:interrupt_action
+int_lock	include\halinc\halinterrupt.h	/^	spinlock_t int_lock;$/;"	m	struct:interrupt_dscp
+int_nr	include\halinc\halinterrupt.h	/^	uint_t int_nr;								\/*中断号*\/$/;"	m	struct:interrupt_dscp
+int_occurcnt	include\halinc\halinterrupt.h	/^	u64_t int_occurcnt;							\/*中断发生次数*\/$/;"	m	struct:interrupt_dscp
+int_pndbitnr	include\halinc\halinterrupt.h	/^	u32_t int_pndbitnr;							\/*中断在中断挂起寄存器的位序*\/$/;"	m	struct:interrupt_dscp
+int_serverfunccnt	include\halinc\halinterrupt.h	/^	uint_t int_serverfunccnt;					\/*中断服务函数个数*\/$/;"	m	struct:interrupt_dscp
+int_status	include\halinc\halinterrupt.h	/^	u32_t int_status;							\/*状态*\/$/;"	m	struct:interrupt_dscp
+interrupt_action	include\halinc\halinterrupt.h	/^typedef struct interrupt_action$/;"	s
+interrupt_action_t	include\halinc\halinterrupt.h	/^}interrupt_action_t;$/;"	t	typeref:struct:interrupt_action
+interrupt_dscp	include\halinc\halinterrupt.h	/^typedef struct interrupt_dscp$/;"	s
+interrupt_dscp_t	include\halinc\halinterrupt.h	/^}interrupt_dscp_t;$/;"	t	typeref:struct:interrupt_dscp
+mode_con	include\halinc\halinterrupt.h	/^	adr_t mode_con;				\/*触发方式配置寄存器*\/$/;"	m	struct:exitreg_map
+name	include\halinc\halinterrupt.h	/^	const char *name;$/;"	m	struct:interrupt_action
+nr_end	include\halinc\halinterrupt.h	/^	uint_t nr_end;				\/*中断结束*\/$/;"	m	struct:exitreg_map
+nr_start	include\halinc\halinterrupt.h	/^	uint_t nr_start;			\/*中断号起始*\/$/;"	m	struct:exitreg_map
+oneusedbit	include\halinc\halinterrupt.h	/^	uint_t oneusedbit;			\/*一个中断使用多少位*\/$/;"	m	struct:exitreg_map
+private_data	include\halinc\halinterrupt.h	/^	void *private_data;							\/*私有数据指针*\/$/;"	m	struct:interrupt_action
+runcnt	include\halinc\halinterrupt.h	/^	uint_t runcnt;$/;"	m	struct:interrupt_action
+ADRSPCE_IO	include\halinc\halmm.h	5;"	d
+ADRSPCE_IROM_IRAM	include\halinc\halmm.h	10;"	d
+ADRSPCE_LPASRAM	include\halinc\halmm.h	9;"	d
+ADRSPCE_NAND	include\halinc\halmm.h	8;"	d
+ADRSPCE_NOTYPE	include\halinc\halmm.h	4;"	d
+ADRSPCE_SDRAM	include\halinc\halmm.h	6;"	d
+ADRSPCE_SFRS	include\halinc\halmm.h	11;"	d
+ADRSPCE_SROMC	include\halinc\halmm.h	7;"	d
+INSERT_EMPTY_FLAG	include\halinc\halmm.h	55;"	d
+INSERT_FULL_FLAG	include\halinc\halmm.h	57;"	d
+INSERT_PART_FLAG	include\halinc\halmm.h	56;"	d
+MEM_ALLOC_BIT_128K	include\halinc\halmm.h	35;"	d
+MEM_ALLOC_BIT_1M	include\halinc\halmm.h	38;"	d
+MEM_ALLOC_BIT_256K	include\halinc\halmm.h	36;"	d
+MEM_ALLOC_BIT_2M	include\halinc\halmm.h	39;"	d
+MEM_ALLOC_BIT_4M	include\halinc\halmm.h	40;"	d
+MEM_ALLOC_BIT_512K	include\halinc\halmm.h	37;"	d
+MEM_BLK_16K	include\halinc\halmm.h	18;"	d
+MEM_BLK_32K	include\halinc\halmm.h	19;"	d
+MEM_BLK_4M	include\halinc\halmm.h	20;"	d
+MEM_BLK_4M_SIZE	include\halinc\halmm.h	13;"	d
+MEM_BLK_CLASS	include\halinc\halmm.h	14;"	d
+MEM_BLK_INVALID	include\halinc\halmm.h	49;"	d
+MEM_FLAG_MASK_128K	include\halinc\halmm.h	28;"	d
+MEM_FLAG_MASK_1M	include\halinc\halmm.h	31;"	d
+MEM_FLAG_MASK_256K	include\halinc\halmm.h	29;"	d
+MEM_FLAG_MASK_2M	include\halinc\halmm.h	32;"	d
+MEM_FLAG_MASK_4M	include\halinc\halmm.h	33;"	d
+MEM_FLAG_MASK_512K	include\halinc\halmm.h	30;"	d
+MEM_FLAG_VAL	include\halinc\halmm.h	52;"	d
+MEM_NO_USE	include\halinc\halmm.h	15;"	d
+MEM_SIZE_128K	include\halinc\halmm.h	42;"	d
+MEM_SIZE_1M	include\halinc\halmm.h	45;"	d
+MEM_SIZE_256K	include\halinc\halmm.h	43;"	d
+MEM_SIZE_2M	include\halinc\halmm.h	46;"	d
+MEM_SIZE_4M	include\halinc\halmm.h	47;"	d
+MEM_SIZE_512K	include\halinc\halmm.h	44;"	d
+MEM_SUBBLK_128K	include\halinc\halmm.h	21;"	d
+MEM_SUBBLK_1M	include\halinc\halmm.h	24;"	d
+MEM_SUBBLK_256K	include\halinc\halmm.h	22;"	d
+MEM_SUBBLK_2M	include\halinc\halmm.h	25;"	d
+MEM_SUBBLK_4M	include\halinc\halmm.h	26;"	d
+MEM_SUBBLK_512K	include\halinc\halmm.h	23;"	d
+MEM_USE_FLAG	include\halinc\halmm.h	16;"	d
+__HALMM_H__	include\halinc\halmm.h	2;"	d
+adrspce_dscp	include\halinc\halmm.h	/^typedef struct adrspce_dscp$/;"	s
+adrspce_dscp_t	include\halinc\halmm.h	/^}adrspce_dscp_t;$/;"	t	typeref:struct:adrspce_dscp
+adrspce_endaddr	include\halinc\halmm.h	/^	adr_t adrspce_endaddr;				\/*地址空间结束地址*\/$/;"	m	struct:adrspce_dscp
+adrspce_flag	include\halinc\halmm.h	/^	u32_t adrspce_flag;					\/*物理划分的类型ADRSPCE_IO、ADRSPCE_SDRAM*\/$/;"	m	struct:adrspce_dscp
+adrspce_iotype	include\halinc\halmm.h	/^	u32_t adrspce_iotype;				\/*若为ADRSPCE_IO，则指示是什么类型的IO*\/$/;"	m	struct:adrspce_dscp
+adrspce_startaddr	include\halinc\halmm.h	/^	adr_t adrspce_startaddr;			\/*地址空间起始地址*\/$/;"	m	struct:adrspce_dscp
+alloc_mem_list_t	include\halinc\halmm.h	/^}alloc_mem_list_t;$/;"	t	typeref:struct:alloc_memory_list
+alloc_memory_list	include\halinc\halmm.h	/^typedef struct alloc_memory_list$/;"	s
+allocblks	include\halinc\halmm.h	/^	uint_t allocblks;$/;"	m	struct:mmap_tlb
+am_empty_list	include\halinc\halmm.h	/^	struct list_head am_empty_list;$/;"	m	struct:alloc_memory_list	typeref:struct:alloc_memory_list::list_head
+am_full_list	include\halinc\halmm.h	/^	struct list_head am_full_list;$/;"	m	struct:alloc_memory_list	typeref:struct:alloc_memory_list::list_head
+am_lock	include\halinc\halmm.h	/^	spinlock_t am_lock;					$/;"	m	struct:alloc_memory_list
+am_part_list	include\halinc\halmm.h	/^	struct list_head am_part_list;$/;"	m	struct:alloc_memory_list	typeref:struct:alloc_memory_list::list_head
+am_size	include\halinc\halmm.h	/^	size_t	am_size;$/;"	m	struct:alloc_memory_list
+freeblks	include\halinc\halmm.h	/^	uint_t freeblks;$/;"	m	struct:mmap_tlb
+map_alloc_bit	include\halinc\halmm.h	/^	u32_t map_alloc_bit;		$/;"	m	struct:mmap_dscp
+map_flag	include\halinc\halmm.h	/^	u32_t map_flag;			$/;"	m	struct:mmap_dscp
+map_list	include\halinc\halmm.h	/^	struct list_head map_list;$/;"	m	struct:mmap_dscp	typeref:struct:mmap_dscp::list_head
+map_lock	include\halinc\halmm.h	/^	spinlock_t map_lock;$/;"	m	struct:mmap_dscp
+map_phy_endaddr	include\halinc\halmm.h	/^	adr_t map_phy_endaddr;$/;"	m	struct:mmap_dscp
+map_phy_startaddr	include\halinc\halmm.h	/^	adr_t map_phy_startaddr;$/;"	m	struct:mmap_dscp
+mmap_dscp	include\halinc\halmm.h	/^typedef struct mmap_dscp$/;"	s
+mmap_dscp_t	include\halinc\halmm.h	/^}mmap_dscp_t;$/;"	t	typeref:struct:mmap_dscp
+mmap_tlb	include\halinc\halmm.h	/^typedef struct mmap_tlb$/;"	s
+mmap_tlb_t	include\halinc\halmm.h	/^}mmap_tlb_t;$/;"	t	typeref:struct:mmap_tlb
+tlb_allocmem_list	include\halinc\halmm.h	/^	alloc_mem_list_t tlb_allocmem_list[MEM_BLK_CLASS];$/;"	m	struct:mmap_tlb
+tlb_list	include\halinc\halmm.h	/^	struct list_head tlb_list;$/;"	m	struct:mmap_tlb	typeref:struct:mmap_tlb::list_head
+tlb_lock	include\halinc\halmm.h	/^	spinlock_t tlb_lock;$/;"	m	struct:mmap_tlb
+UART0	include\halinc\haluart.h	/^  UART0,    \/\/           GPA0_0       GPA0_1$/;"	e	enum:UARTn
+UART1	include\halinc\haluart.h	/^  UART1,    \/\/           GPA0_4       GPA0_5$/;"	e	enum:UARTn
+UART2	include\halinc\haluart.h	/^  UART2,    \/\/           GPA1_0       GPA1_1$/;"	e	enum:UARTn
+UART3	include\halinc\haluart.h	/^  UART3,    \/\/           GPA1_2       GPA1_3$/;"	e	enum:UARTn
+UARTn	include\halinc\haluart.h	/^typedef enum  UARTn$/;"	g
+UARTn	include\halinc\haluart.h	/^}UARTn;$/;"	t	typeref:enum:UARTn
+__HALUART_H__	include\halinc\haluart.h	2;"	d
+__LED_H__	include\halinc\led.h	2;"	d
+__LINK_H__	include\halinc\link.h	2;"	d
+AP_ALL_WR	include\halinc\platform.h	24;"	d
+AP_DEPEND_SR	include\halinc\platform.h	21;"	d
+AP_SUPWR_USERNOACCESS	include\halinc\platform.h	22;"	d
+AP_SUPWR_USERR	include\halinc\platform.h	23;"	d
+BAUDRATE	include\halinc\platform.h	55;"	d
+CPU_NUM	include\halinc\platform.h	6;"	d
+DSC_SELECT_4BIT	include\halinc\platform.h	17;"	d
+DSC_SELECT_AP	include\halinc\platform.h	19;"	d
+DSC_SELECT_DOMAIN	include\halinc\platform.h	18;"	d
+DSC_SELECT_IDE	include\halinc\platform.h	15;"	d
+DSC_SELECT_NOCW	include\halinc\platform.h	16;"	d
+EXT_INT_0_CON	include\halinc\platform.h	84;"	d
+EXT_INT_0_MASK	include\halinc\platform.h	89;"	d
+EXT_INT_0_PEND	include\halinc\platform.h	94;"	d
+EXT_INT_1_CON	include\halinc\platform.h	85;"	d
+EXT_INT_1_MASK	include\halinc\platform.h	90;"	d
+EXT_INT_1_PEND	include\halinc\platform.h	95;"	d
+EXT_INT_2_CON	include\halinc\platform.h	86;"	d
+EXT_INT_2_MASK	include\halinc\platform.h	91;"	d
+EXT_INT_2_PEND	include\halinc\platform.h	96;"	d
+EXT_INT_3_CON	include\halinc\platform.h	87;"	d
+EXT_INT_3_MASK	include\halinc\platform.h	92;"	d
+EXT_INT_3_PEND	include\halinc\platform.h	97;"	d
+GPA0CON	include\halinc\platform.h	37;"	d
+GPA1CON	include\halinc\platform.h	38;"	d
+GPC0CON	include\halinc\platform.h	27;"	d
+GPC0DAT	include\halinc\platform.h	28;"	d
+GPH0CON	include\halinc\platform.h	31;"	d
+GPH1CON	include\halinc\platform.h	32;"	d
+GPH2CON	include\halinc\platform.h	33;"	d
+GPH3CON	include\halinc\platform.h	34;"	d
+ICNTB	include\halinc\platform.h	108;"	d
+ICNTO	include\halinc\platform.h	109;"	d
+INT_CSTAT	include\halinc\platform.h	110;"	d
+INT_STACK_HIGH_ADDR	include\halinc\platform.h	10;"	d
+PAGE_TABLE_SIZE	include\halinc\platform.h	13;"	d
+PLFM_ADRSPCE_NR	include\halinc\platform.h	8;"	d
+TCFG	include\halinc\platform.h	103;"	d
+TCON	include\halinc\platform.h	104;"	d
+TFCNTB	include\halinc\platform.h	107;"	d
+TICNTB	include\halinc\platform.h	105;"	d
+TICNTO	include\halinc\platform.h	106;"	d
+TINT_CSTAT	include\halinc\platform.h	101;"	d
+TTB_PHY_ADDR	include\halinc\platform.h	12;"	d
+UART0_BASE	include\halinc\platform.h	40;"	d
+UART1_BASE	include\halinc\platform.h	41;"	d
+UART2_BASE	include\halinc\platform.h	42;"	d
+UART3_BASE	include\halinc\platform.h	43;"	d
+UBRDIV	include\halinc\platform.h	51;"	d
+UCON	include\halinc\platform.h	46;"	d
+UDIVSLOT	include\halinc\platform.h	52;"	d
+UFCON	include\halinc\platform.h	47;"	d
+ULCON	include\halinc\platform.h	45;"	d
+URXH	include\halinc\platform.h	50;"	d
+UTRSTAT	include\halinc\platform.h	48;"	d
+UTXH	include\halinc\platform.h	49;"	d
+VIC0ADDRESS	include\halinc\platform.h	78;"	d
+VIC0INTENABLE	include\halinc\platform.h	68;"	d
+VIC0INTENCLEAR	include\halinc\platform.h	73;"	d
+VIC0INTSELECT	include\halinc\platform.h	63;"	d
+VIC0IRQSTATUS	include\halinc\platform.h	58;"	d
+VIC1ADDRESS	include\halinc\platform.h	79;"	d
+VIC1INTENABLE	include\halinc\platform.h	69;"	d
+VIC1INTENCLEAR	include\halinc\platform.h	74;"	d
+VIC1INTSELECT	include\halinc\platform.h	64;"	d
+VIC1IRQSTATUS	include\halinc\platform.h	59;"	d
+VIC2ADDRESS	include\halinc\platform.h	80;"	d
+VIC2INTENABLE	include\halinc\platform.h	70;"	d
+VIC2INTENCLEAR	include\halinc\platform.h	75;"	d
+VIC2INTSELECT	include\halinc\platform.h	65;"	d
+VIC2IRQSTATUS	include\halinc\platform.h	60;"	d
+VIC3ADDRESS	include\halinc\platform.h	81;"	d
+VIC3INTENABLE	include\halinc\platform.h	71;"	d
+VIC3INTENCLEAR	include\halinc\platform.h	76;"	d
+VIC3INTSELECT	include\halinc\platform.h	66;"	d
+VIC3IRQSTATUS	include\halinc\platform.h	61;"	d
+WORK_UART	include\halinc\platform.h	54;"	d
+__PLATFORM_H__	include\halinc\platform.h	2;"	d
+__PLATFORMINIT_H__	include\halinc\platforminit.h	2;"	d
+__PRINTK_H__	include\halinc\printk.h	2;"	d
+system_error	include\halinc\printk.h	5;"	d
+__KRNL_H__	include\krnlinc\krnl.h	2;"	d
+__KRNLBITMAP_H__	include\krnlinc\krnlbitmap.h	2;"	d
+bitmap	include\krnlinc\krnlbitmap.h	/^typedef struct bitmap$/;"	s
+bitmap_t	include\krnlinc\krnlbitmap.h	/^}bitmap_t;$/;"	t	typeref:struct:bitmap
+count	include\krnlinc\krnlbitmap.h	/^	u32_t count[2];				\/*64个优先级*\/$/;"	m	struct:bitmap
+BYTE_ALIGN	include\krnlinc\krnlbytesmm.h	5;"	d
+__KRNLBYTESMM_H__	include\krnlinc\krnlbytesmm.h	2;"	d
+__KRNLCPUIDLE_H__	include\krnlinc\krnlcpuidle.h	2;"	d
+CHRDEV_MAJOR_HASH_SIZE	include\krnlinc\krnldevice.h	4;"	d
+MAJOR	include\krnlinc\krnldevice.h	9;"	d
+MINOR	include\krnlinc\krnldevice.h	10;"	d
+MINORBITS	include\krnlinc\krnldevice.h	6;"	d
+MINORMASK	include\krnlinc\krnldevice.h	7;"	d
+MKDEV	include\krnlinc\krnldevice.h	11;"	d
+__KRNLDEVICE_H__	include\krnlinc\krnldevice.h	2;"	d
+dev_attrb	include\krnlinc\krnldevice.h	/^	void *dev_attrb;							\/*设备属性指针*\/$/;"	m	struct:device
+dev_count	include\krnlinc\krnldevice.h	/^	uint_t dev_count;							\/*设备计数*\/$/;"	m	struct:driver
+dev_drv	include\krnlinc\krnldevice.h	/^	driver_t *dev_drv;							\/*设备驱动指针*\/$/;"	m	struct:device
+dev_flags	include\krnlinc\krnldevice.h	/^	uint_t dev_flags;							\/*设备标记*\/$/;"	m	struct:device
+dev_id	include\krnlinc\krnldevice.h	/^	dev_t dev_id;								\/*设备id*\/$/;"	m	struct:device
+dev_list	include\krnlinc\krnldevice.h	/^	struct list_head dev_list;$/;"	m	struct:device	typeref:struct:device::list_head
+dev_lock	include\krnlinc\krnldevice.h	/^	spinlock_t dev_lock;$/;"	m	struct:device
+dev_name	include\krnlinc\krnldevice.h	/^	char_t dev_name[32];						\/*设备名字*\/$/;"	m	struct:device
+dev_private	include\krnlinc\krnldevice.h	/^	void *dev_private;							\/*设备私有数据*\/$/;"	m	struct:device
+dev_sem	include\krnlinc\krnldevice.h	/^	sem_t dev_sem;								\/*信号量*\/$/;"	m	struct:device
+dev_status	include\krnlinc\krnldevice.h	/^	uint_t dev_status;							\/*设备状态*\/$/;"	m	struct:device
+device	include\krnlinc\krnldevice.h	/^typedef struct device$/;"	s
+device_t	include\krnlinc\krnldevice.h	/^}device_t;$/;"	t	typeref:struct:device
+driver	include\krnlinc\krnldevice.h	/^typedef struct driver$/;"	s
+driver_t	include\krnlinc\krnldevice.h	/^}driver_t;$/;"	t	typeref:struct:driver
+drv_attrb	include\krnlinc\krnldevice.h	/^	void *drv_attrb;							\/*属性体*\/$/;"	m	struct:driver
+drv_devicelist	include\krnlinc\krnldevice.h	/^	struct list_head drv_devicelist;			\/*设备链表*\/$/;"	m	struct:driver	typeref:struct:driver::list_head
+drv_entry	include\krnlinc\krnldevice.h	/^	drvfunc_t  drv_entry;						\/*入口函数*\/$/;"	m	struct:driver
+drv_exit	include\krnlinc\krnldevice.h	/^	drvfunc_t  drv_exit;						\/*出口函数*\/$/;"	m	struct:driver
+drv_flags	include\krnlinc\krnldevice.h	/^	uint_t drv_flags;$/;"	m	struct:driver
+drv_list	include\krnlinc\krnldevice.h	/^	struct list_head drv_list;$/;"	m	struct:driver	typeref:struct:driver::list_head
+drv_lock	include\krnlinc\krnldevice.h	/^	spinlock_t drv_lock;$/;"	m	struct:driver
+drv_name	include\krnlinc\krnldevice.h	/^	char_t drv_name[32];						\/*驱动名字*\/$/;"	m	struct:driver
+drv_operations	include\krnlinc\krnldevice.h	/^struct drv_operations{$/;"	s
+drv_private	include\krnlinc\krnldevice.h	/^	void *drv_private;							\/*私有数据指针*\/$/;"	m	struct:driver
+drv_safedrv	include\krnlinc\krnldevice.h	/^	void *drv_safedrv;							\/*安全体*\/$/;"	m	struct:driver
+drv_sem	include\krnlinc\krnldevice.h	/^	sem_t drv_sem;								\/*驱动程序的信号量*\/$/;"	m	struct:driver
+drv_status	include\krnlinc\krnldevice.h	/^	uint_t drv_status;$/;"	m	struct:driver
+file_ops	include\krnlinc\krnldevice.h	/^	struct drv_operations *file_ops;			\/*驱动操作函数*\/$/;"	m	struct:driver	typeref:struct:driver::drv_operations
+next	include\krnlinc\krnldevice.h	/^	struct device *next;						\/*指向同类设备的下一个次设备*\/$/;"	m	struct:device	typeref:struct:device::device
+open	include\krnlinc\krnldevice.h	/^	int (*open) (device_t *);$/;"	m	struct:drv_operations
+read	include\krnlinc\krnldevice.h	/^	sint_t (*read) (device_t *, char *, size_t, long *);$/;"	m	struct:drv_operations
+rev_extend1	include\krnlinc\krnldevice.h	/^	void *rev_extend1;							\/*保留扩展1*\/$/;"	m	struct:device
+rev_extend1	include\krnlinc\krnldevice.h	/^	void *rev_extend1;							\/*保留扩展1*\/$/;"	m	struct:driver
+rev_extend2	include\krnlinc\krnldevice.h	/^	void *rev_extend2;							\/*保留扩展2*\/$/;"	m	struct:device
+rev_extend2	include\krnlinc\krnldevice.h	/^	void *rev_extend2;							\/*保留扩展2*\/$/;"	m	struct:driver
+unlocked_ioctl	include\krnlinc\krnldevice.h	/^	long (*unlocked_ioctl) (device_t *, unsigned int, unsigned long);$/;"	m	struct:drv_operations
+write	include\krnlinc\krnldevice.h	/^	sint_t (*write) (device_t *, const char *, size_t, long *);$/;"	m	struct:drv_operations
+KEXTERN	include\krnlinc\krnlglobal.h	5;"	d
+KEXTERN	include\krnlinc\krnlglobal.h	6;"	d
+KRNL_GLOBAL_VARIABLE	include\krnlinc\krnlglobal.h	9;"	d
+__KRNLGLOBAL_H__	include\krnlinc\krnlglobal.h	2;"	d
+__KRNLINIT_H__	include\krnlinc\krnlinit.h	2;"	d
+__KRNLINTERRUPT_H__	include\krnlinc\krnlinterrupt.h	2;"	d
+KRNL_ALLOC_MAXSIZE	include\krnlinc\krnlmm.h	4;"	d
+KRNL_ALLOC_MINSIZE	include\krnlinc\krnlmm.h	5;"	d
+KRNL_BYTES_MAXSIZE	include\krnlinc\krnlmm.h	8;"	d
+KRNL_BYTES_MINSIZE	include\krnlinc\krnlmm.h	7;"	d
+KRNL_BYTE_ALIGN_SIZE	include\krnlinc\krnlmm.h	13;"	d
+KRNL_PAGE_ALLOC_MAXSIZE	include\krnlinc\krnlmm.h	11;"	d
+KRNL_PAGE_ALLOC_MINIZE	include\krnlinc\krnlmm.h	10;"	d
+KRNL_PAGE_SIZE	include\krnlinc\krnlmm.h	9;"	d
+MPLHEAD_BYTE_TYPE	include\krnlinc\krnlmm.h	15;"	d
+MPLHEAD_PAGE_MG	include\krnlinc\krnlmm.h	16;"	d
+MPLHEAD_PAGE_TYPE	include\krnlinc\krnlmm.h	14;"	d
+__KRNLMM_H__	include\krnlinc\krnlmm.h	2;"	d
+kmpl_bytelist	include\krnlinc\krnlmm.h	/^	struct list_head kmpl_bytelist;				\/*挂载字级内存池的链表*\/$/;"	m	struct:krnl_mplmm	typeref:struct:krnl_mplmm::list_head
+kmpl_bytelock	include\krnlinc\krnlmm.h	/^	spinlock_t kmpl_bytelock;					\/*字级内存池保护锁*\/$/;"	m	struct:krnl_mplmm
+kmpl_bytemplcnt	include\krnlinc\krnlmm.h	/^	uint_t kmpl_bytemplcnt;						\/*字级内存池个数*\/$/;"	m	struct:krnl_mplmm
+kmpl_flag	include\krnlinc\krnlmm.h	/^	uint_t kmpl_flag;							\/*标记*\/$/;"	m	struct:krnl_mplmm
+kmpl_headlist	include\krnlinc\krnlmm.h	/^	struct list_head kmpl_headlist;				\/*挂载内存池头的链表*\/$/;"	m	struct:krnl_mplmm	typeref:struct:krnl_mplmm::list_head
+kmpl_list	include\krnlinc\krnlmm.h	/^	struct list_head kmpl_list;$/;"	m	struct:krnl_mplmm	typeref:struct:krnl_mplmm::list_head
+kmpl_lock	include\krnlinc\krnlmm.h	/^	spinlock_t kmpl_lock;					$/;"	m	struct:krnl_mplmm
+kmpl_pagelist	include\krnlinc\krnlmm.h	/^	struct list_head kmpl_pagelist;				\/*挂载页级内存池的链表*\/$/;"	m	struct:krnl_mplmm	typeref:struct:krnl_mplmm::list_head
+kmpl_pagelock	include\krnlinc\krnlmm.h	/^	spinlock_t kmpl_pagelock;					\/*页级内存池保护锁*\/$/;"	m	struct:krnl_mplmm
+kmpl_pagemplcnt	include\krnlinc\krnlmm.h	/^	uint_t kmpl_pagemplcnt;					    \/*页级内存池个数*\/$/;"	m	struct:krnl_mplmm
+kmpl_recentbytempl	include\krnlinc\krnlmm.h	/^	mplhead_t *kmpl_recentbytempl;				\/*最近操作过的字级内存池*\/$/;"	m	struct:krnl_mplmm
+kmpl_recentmplhead	include\krnlinc\krnlmm.h	/^	mplhead_t *kmpl_recentmplhead;				\/*最近操作过的内存池头的内存池*\/$/;"	m	struct:krnl_mplmm
+kmpl_recentpagempl	include\krnlinc\krnlmm.h	/^	mplhead_t *kmpl_recentpagempl;				\/*最近操作过的页级内存池*\/$/;"	m	struct:krnl_mplmm
+kmpl_stus	include\krnlinc\krnlmm.h	/^	uint_t kmpl_stus;							\/*状态*\/$/;"	m	struct:krnl_mplmm
+krnl_mplmm	include\krnlinc\krnlmm.h	/^typedef struct krnl_mplmm$/;"	s
+krnl_mplmm_t	include\krnlinc\krnlmm.h	/^}krnl_mplmm_t;$/;"	t	typeref:struct:krnl_mplmm
+mpl_aliobsz	include\krnlinc\krnlmm.h	/^	uint_t mpl_aliobsz;							\/*实际分配页面的大小，页级内存分配时等于mpl_pagesize*\/$/;"	m	struct:mplhead
+mpl_endaddr	include\krnlinc\krnlmm.h	/^	adr_t mpl_endaddr;							\/*内存池结束地址*\/$/;"	m	struct:mplhead
+mpl_firstbyteaddr	include\krnlinc\krnlmm.h	/^	adr_t mpl_firstbyteaddr;					\/*第一个字级内存对象的地址, 页级内存不使用*\/$/;"	m	struct:mplhead
+mpl_firstpage	include\krnlinc\krnlmm.h	/^	pglmap_t *mpl_firstpage;					\/*内存池的第一个可使用的页面*\/$/;"	m	struct:mplhead
+mpl_headty	include\krnlinc\krnlmm.h	/^	uint_t mpl_headty;							\/*类型：页级，字级*\/$/;"	m	struct:mplhead
+mpl_lock	include\krnlinc\krnlmm.h	/^	spinlock_t mpl_lock;				$/;"	m	struct:mplhead
+mpl_nextpageoffset	include\krnlinc\krnlmm.h	/^	uint_t mpl_nextpageoffset;					\/*下一个对象指针的偏移*\/$/;"	m	struct:mplhead
+mpl_pagecnt	include\krnlinc\krnlmm.h	/^	uint_t mpl_pagecnt;							\/*内存池中页面个数*\/$/;"	m	struct:mplhead
+mpl_pagedscpaddr	include\krnlinc\krnlmm.h	/^	pglmap_t *mpl_pagedscpaddr;					\/*页面描述符基地址，字级内存不使用*\/$/;"	m	struct:mplhead
+mpl_pagedscpcnt	include\krnlinc\krnlmm.h	/^	uint_t mpl_pagedscpcnt;						\/*页面描述符个数，字级内存不使用*\/$/;"	m	struct:mplhead
+mpl_pagesize	include\krnlinc\krnlmm.h	/^	uint_t mpl_pagesize;						\/*页面大小*\/$/;"	m	struct:mplhead
+mpl_startaddr	include\krnlinc\krnlmm.h	/^	adr_t mpl_startaddr;						\/*内存池开始地址*\/$/;"	m	struct:mplhead
+mpl_usedpagecnt	include\krnlinc\krnlmm.h	/^	uint_t mpl_usedpagecnt;						\/*内存池中已经使用了的页面*\/$/;"	m	struct:mplhead
+mplhead	include\krnlinc\krnlmm.h	/^typedef struct mplhead$/;"	s
+mplhead_t	include\krnlinc\krnlmm.h	/^}mplhead_t;$/;"	t	typeref:struct:mplhead
+next	include\krnlinc\krnlmm.h	/^	struct pglmap_t *next;$/;"	m	struct:pglmap_t	typeref:struct:pglmap_t::pglmap_t
+pgl_startaddr	include\krnlinc\krnlmm.h	/^	adr_t pgl_startaddr;$/;"	m	struct:pglmap_t
+pglmap_t	include\krnlinc\krnlmm.h	/^typedef struct pglmap_t$/;"	s
+pglmap_t	include\krnlinc\krnlmm.h	/^}pglmap_t;$/;"	t	typeref:struct:pglmap_t
+pml_list	include\krnlinc\krnlmm.h	/^	struct list_head pml_list;$/;"	m	struct:mplhead	typeref:struct:mplhead::list_head
+PAGE_ALIGN	include\krnlinc\krnlpagemm.h	4;"	d
+__KRNLPAGEMM_H__	include\krnlinc\krnlpagemm.h	2;"	d
+CPU_NEED_SCHED	include\krnlinc\krnlsched.h	8;"	d
+CPU_NO_NEED_SCHED	include\krnlinc\krnlsched.h	7;"	d
+KRNL_PREEMPT_DISENABLE	include\krnlinc\krnlsched.h	5;"	d
+KRNL_PREEMPT_ENABLE	include\krnlinc\krnlsched.h	4;"	d
+__KRNLSCHED_H__	include\krnlinc\krnlsched.h	2;"	d
+schd_cpuid	include\krnlinc\krnlsched.h	/^	uint_t schd_cpuid;							\/*当前cpuid*\/$/;"	m	struct:thdsched
+schd_cpuidle	include\krnlinc\krnlsched.h	/^	thread_t *schd_cpuidle;						\/*当前cpu的空转进程*\/$/;"	m	struct:thdsched
+schd_curthread	include\krnlinc\krnlsched.h	/^	thread_t *schd_curthread;					\/*当前cpu正在运行的进程*\/$/;"	m	struct:thdsched
+schd_dyncprority	include\krnlinc\krnlsched.h	/^	uint_t schd_dyncprority;					\/*当前的动态优先级*\/$/;"	m	struct:thdsched
+schd_flag	include\krnlinc\krnlsched.h	/^	uint_t schd_flag;							\/*调度标记*\/$/;"	m	struct:thdsched
+schd_lock	include\krnlinc\krnlsched.h	/^	spinlock_t schd_lock;$/;"	m	struct:thdsched
+schd_preempt	include\krnlinc\krnlsched.h	/^	uint_t schd_preempt;						\/*是否可抢占*\/$/;"	m	struct:thdsched
+schd_priobitmap	include\krnlinc\krnlsched.h	/^	bitmap_t schd_priobitmap;					\/*优先级位图*\/$/;"	m	struct:thdsched
+schd_thdlist	include\krnlinc\krnlsched.h	/^	thd_list_t schd_thdlist[TD_PRIO_MAX];		\/*进程挂载表*\/$/;"	m	struct:thdsched
+schd_threadnr	include\krnlinc\krnlsched.h	/^	uint_t schd_threadnr;						\/*当前cpu下的线程总数*\/$/;"	m	struct:thdsched
+thd_list	include\krnlinc\krnlsched.h	/^typedef struct thd_list$/;"	s
+thd_list_t	include\krnlinc\krnlsched.h	/^}thd_list_t;$/;"	t	typeref:struct:thd_list
+thdl_cnt	include\krnlinc\krnlsched.h	/^	uint_t thdl_cnt;							\/*链表下进程计数*\/$/;"	m	struct:thd_list
+thdl_list	include\krnlinc\krnlsched.h	/^	struct list_head thdl_list;					\/*挂载进程的链表*\/$/;"	m	struct:thd_list	typeref:struct:thd_list::list_head
+thdsched	include\krnlinc\krnlsched.h	/^typedef struct thdsched$/;"	s
+thdsched_t	include\krnlinc\krnlsched.h	/^}thdsched_t;$/;"	t	typeref:struct:thdsched
+thdsched_tlb	include\krnlinc\krnlsched.h	/^typedef struct thdsched_tlb$/;"	s
+thdsched_tlb_t	include\krnlinc\krnlsched.h	/^}thdsched_tlb_t;$/;"	t	typeref:struct:thdsched_tlb
+thschtlb_cpunr	include\krnlinc\krnlsched.h	/^	uint_t 	   thschtlb_cpunr;					\/*cpu总数*\/$/;"	m	struct:thdsched_tlb
+thschtlb_lock	include\krnlinc\krnlsched.h	/^	spinlock_t thschtlb_lock;$/;"	m	struct:thdsched_tlb
+thschtlb_thdnr	include\krnlinc\krnlsched.h	/^	uint_t 	   thschtlb_thdnr;					\/*线程总数*\/$/;"	m	struct:thdsched_tlb
+thschtlb_tlb	include\krnlinc\krnlsched.h	/^	thdsched_t thschtlb_tlb[CPU_NUM];			\/*调度表*\/$/;"	m	struct:thdsched_tlb
+DEFINE_SEM	include\krnlinc\krnlsem.h	4;"	d
+__KRNLSEM_H__	include\krnlinc\krnlsem.h	2;"	d
+sem	include\krnlinc\krnlsem.h	/^typedef struct sem{$/;"	s
+sem_count	include\krnlinc\krnlsem.h	/^	sint_t	sem_count;					\/*信号量计数*\/$/;"	m	struct:sem
+sem_list	include\krnlinc\krnlsem.h	/^	waitlist_t sem_list;				\/*信号量等待队列*\/$/;"	m	struct:sem
+sem_lock	include\krnlinc\krnlsem.h	/^	spinlock_t sem_lock;				\/*自旋锁*\/$/;"	m	struct:sem
+sem_t	include\krnlinc\krnlsem.h	/^}sem_t;$/;"	t	typeref:struct:sem
+__KRNLSLEEP_H__	include\krnlinc\krnlsleep.h	2;"	d
+__KRNLTASK_H__	include\krnlinc\krnltask.h	2;"	d
+DEFAULT_CPSR	include\krnlinc\krnlthread.h	29;"	d
+DEFAULT_CPUIDLE_SPSR	include\krnlinc\krnlthread.h	30;"	d
+DEFAULT_USR_SPSR	include\krnlinc\krnlthread.h	31;"	d
+TDRUN_TICK	include\krnlinc\krnlthread.h	13;"	d
+TDSTUS_DEAD	include\krnlinc\krnlthread.h	10;"	d
+TDSTUS_NEW	include\krnlinc\krnlthread.h	5;"	d
+TDSTUS_READY	include\krnlinc\krnlthread.h	9;"	d
+TDSTUS_RUN	include\krnlinc\krnlthread.h	6;"	d
+TDSTUS_SLEEP	include\krnlinc\krnlthread.h	7;"	d
+TDSTUS_SUSPEND	include\krnlinc\krnlthread.h	8;"	d
+TD_FALG_KRNL	include\krnlinc\krnlthread.h	23;"	d
+TD_FAULT_KRNLSTACK	include\krnlinc\krnlthread.h	27;"	d
+TD_FAULT_USRSTACK	include\krnlinc\krnlthread.h	26;"	d
+TD_FLAG_USR	include\krnlinc\krnlthread.h	24;"	d
+TD_PRIO_MAX	include\krnlinc\krnlthread.h	19;"	d
+TD_PRIO_MIN	include\krnlinc\krnlthread.h	20;"	d
+TD_RES_MAX	include\krnlinc\krnlthread.h	16;"	d
+__KRNLTHREAD_H__	include\krnlinc\krnlthread.h	2;"	d
+cpu_id	include\krnlinc\krnlthread.h	/^	uint_t cpu_id;						\/*cpuid*\/$/;"	m	struct:thread
+ctx_cpsr	include\krnlinc\krnlthread.h	/^	reg_t ctx_cpsr;						\/*当前模式的cpsr*\/$/;"	m	struct:thd_contex
+ctx_lr	include\krnlinc\krnlthread.h	/^	reg_t ctx_lr;						\/*内核模式下的lr*\/$/;"	m	struct:thd_contex
+ctx_svcsp	include\krnlinc\krnlthread.h	/^	reg_t ctx_svcsp;$/;"	m	struct:thd_contex
+ctx_svcspsr	include\krnlinc\krnlthread.h	/^	reg_t ctx_svcspsr;	$/;"	m	struct:thd_contex
+ctx_usrsp	include\krnlinc\krnlthread.h	/^	reg_t ctx_usrsp;$/;"	m	struct:thd_contex
+sleep_ticks	include\krnlinc\krnlthread.h	/^	uint_t sleep_ticks;					\/*休眠时间片*\/$/;"	m	struct:thread
+thd_contex	include\krnlinc\krnlthread.h	/^typedef struct thd_contex$/;"	s
+thd_contex_t	include\krnlinc\krnlthread.h	/^}thd_contex_t;$/;"	t	typeref:struct:thd_contex
+thd_contexs	include\krnlinc\krnlthread.h	/^	thd_contex_t thd_contexs;			\/*进程上下文*\/$/;"	m	struct:thread
+thd_flag	include\krnlinc\krnlthread.h	/^	uint_t thd_flag;					\/*标记*\/		$/;"	m	struct:thread
+thd_id	include\krnlinc\krnlthread.h	/^	uint_t thd_id;						\/*进程id*\/$/;"	m	struct:thread
+thd_krnlstackend	include\krnlinc\krnlthread.h	/^	adr_t  thd_krnlstackend;			\/*内核栈结束地址*\/$/;"	m	struct:thread
+thd_krnlstackstart	include\krnlinc\krnlthread.h	/^	adr_t  thd_krnlstackstart;			\/*内核栈起始地址*\/$/;"	m	struct:thread
+thd_list	include\krnlinc\krnlthread.h	/^	struct list_head thd_list;$/;"	m	struct:thread	typeref:struct:thread::list_head
+thd_lock	include\krnlinc\krnlthread.h	/^	spinlock_t thd_lock;$/;"	m	struct:thread
+thd_priority	include\krnlinc\krnlthread.h	/^	uint_t thd_priority;				\/*优先级*\/$/;"	m	struct:thread
+thd_resources	include\krnlinc\krnlthread.h	/^	void *thd_resources[TD_RES_MAX];	\/*进程管理的资源*\/$/;"	m	struct:thread
+thd_runmode	include\krnlinc\krnlthread.h	/^	uint_t thd_runmode;					\/*运行模式*\/$/;"	m	struct:thread
+thd_stus	include\krnlinc\krnlthread.h	/^	uint_t thd_stus;					\/*状态*\/$/;"	m	struct:thread
+thd_ticks	include\krnlinc\krnlthread.h	/^	uint_t thd_ticks;					\/*运行时间片*\/$/;"	m	struct:thread
+thd_usrlstackend	include\krnlinc\krnlthread.h	/^	adr_t  thd_usrlstackend;			\/*用户栈结束地址*\/$/;"	m	struct:thread
+thd_usrstackstart	include\krnlinc\krnlthread.h	/^	adr_t  thd_usrstackstart;			\/*用户栈起始地址*\/$/;"	m	struct:thread
+thread	include\krnlinc\krnlthread.h	/^typedef struct thread$/;"	s
+thread_t	include\krnlinc\krnlthread.h	/^}thread_t;$/;"	t	typeref:struct:thread
+__KRNLWAITLIST_H__	include\krnlinc\krnlwaitlist.h	2;"	d
+__WAIT_LIST_INIT	include\krnlinc\krnlwaitlist.h	4;"	d
+waitlist	include\krnlinc\krnlwaitlist.h	/^typedef struct waitlist{$/;"	s
+waitlist_t	include\krnlinc\krnlwaitlist.h	/^}waitlist_t;$/;"	t	typeref:struct:waitlist
+wl_count	include\krnlinc\krnlwaitlist.h	/^	uint_t	   	wl_count;				\/*等待队列计数*\/$/;"	m	struct:waitlist
+wl_list	include\krnlinc\krnlwaitlist.h	/^	struct list_head	wl_list;		\/*等待队列链表*\/$/;"	m	struct:waitlist	typeref:struct:waitlist::list_head
+wl_lock	include\krnlinc\krnlwaitlist.h	/^	spinlock_t 	wl_lock;				\/*等待队列spinlock*\/$/;"	m	struct:waitlist
+__LIB_H__	include\libinc\lib.h	2;"	d
+__STDARG_H__	include\libinc\stdarg.h	2;"	d
+_va_sizeof	include\libinc\stdarg.h	7;"	d
+va_arg	include\libinc\stdarg.h	10;"	d
+va_end	include\libinc\stdarg.h	11;"	d
+va_list	include\libinc\stdarg.h	5;"	d
+va_start	include\libinc\stdarg.h	9;"	d
+__STRING_H__	include\libinc\string.h	2;"	d
+__LMOSEM_H__	include\lmosem.h	2;"	d
+bitmap_bit_count	kernel\krnlbitmap.c	/^uint_t bitmap_bit_count(void)$/;"	f
+bitmap_clear_bit	kernel\krnlbitmap.c	/^void bitmap_clear_bit(bitmap_t *map, uint_t pos)$/;"	f
+bitmap_get_first_set	kernel\krnlbitmap.c	/^uint_t bitmap_get_first_set(bitmap_t *map)$/;"	f
+bitmap_init	kernel\krnlbitmap.c	/^void bitmap_init(bitmap_t *map)$/;"	f
+bitmap_set_bit	kernel\krnlbitmap.c	/^void bitmap_set_bit(bitmap_t *map, uint_t pos)$/;"	f
+quick_find_table	kernel\krnlbitmap.c	/^private int quick_find_table[] = $/;"	v
+krnl_byte_core_alloc	kernel\krnlbytesmm.c	/^private adr_t krnl_byte_core_alloc(size_t size)$/;"	f
+krnl_byte_core_free	kernel\krnlbytesmm.c	/^private bool_t krnl_byte_core_free(adr_t addr, size_t size)$/;"	f
+krnl_bytes_alloc	kernel\krnlbytesmm.c	/^adr_t krnl_bytes_alloc(size_t size)$/;"	f
+krnl_bytes_free	kernel\krnlbytesmm.c	/^bool_t krnl_bytes_free(adr_t addr, size_t size)$/;"	f
+krnl_delete_bytempl	kernel\krnlbytesmm.c	/^private void krnl_delete_bytempl(krnl_mplmm_t *mplmm_ptr, mplhead_t *mplhead_ptr)$/;"	f
+krnl_find_suitable_allocbytempl	kernel\krnlbytesmm.c	/^private mplhead_t *krnl_find_suitable_allocbytempl(krnl_mplmm_t *mplmm_ptr, size_t sizes)$/;"	f
+krnl_find_suitable_freebytempl	kernel\krnlbytesmm.c	/^private mplhead_t *krnl_find_suitable_freebytempl(krnl_mplmm_t *mplmm_ptr, adr_t addr, size_t size)$/;"	f
+krnl_free_bytempl	kernel\krnlbytesmm.c	/^private bool_t krnl_free_bytempl(mplhead_t *mplhead_ptr, adr_t addr)$/;"	f
+krnl_mplhead_init	kernel\krnlbytesmm.c	/^private mplhead_t *krnl_mplhead_init(krnl_mplmm_t *mplmm_ptr, mplhead_t *mplhead_ptr, size_t pagesize, adr_t start, adr_t end)$/;"	f
+krnl_new_bytempl	kernel\krnlbytesmm.c	/^private mplhead_t *krnl_new_bytempl(krnl_mplmm_t *mplmm_ptr, size_t sizes)$/;"	f
+krnl_rtn_byteaddr	kernel\krnlbytesmm.c	/^private adr_t krnl_rtn_byteaddr(mplhead_t *mplhead_ptr)$/;"	f
+mplhead_isok_allocbytempl	kernel\krnlbytesmm.c	/^private bool_t mplhead_isok_allocbytempl(mplhead_t *ptr, size_t size)$/;"	f
+mplhead_isok_freebytempl	kernel\krnlbytesmm.c	/^private bool_t mplhead_isok_freebytempl(mplhead_t *ptr, adr_t addr, size_t size)$/;"	f
+blkmemory_test	kernel\krnlcpuidle.c	/^void  blkmemory_test(void)$/;"	f
+bytememory_test	kernel\krnlcpuidle.c	/^void bytememory_test(void)$/;"	f
+cpuidle_thread	kernel\krnlcpuidle.c	/^void cpuidle_thread(void)$/;"	f
+krnl_cpuidle_init	kernel\krnlcpuidle.c	/^void krnl_cpuidle_init(void)$/;"	f
+pagememory_test	kernel\krnlcpuidle.c	/^void pagememory_test(void)$/;"	f
+default_ioctl	kernel\krnldevice.c	/^KLINE long default_ioctl(device_t *dev, unsigned int cmd, unsigned long arg){ return DFCERRSTUS;}$/;"	f
+default_open	kernel\krnldevice.c	/^KLINE int default_open(device_t *dev){ return DFCERRSTUS;}$/;"	f
+default_read	kernel\krnldevice.c	/^KLINE sint_t default_read(device_t *dev, char *buf, size_t count, long *ppos){ return DFCERRSTUS;}$/;"	f
+default_write	kernel\krnldevice.c	/^KLINE sint_t default_write(device_t *dev, const char *buf, size_t count, long *ppos){ return DFCERRSTUS;}$/;"	f
+device_init	kernel\krnldevice.c	/^static void device_init(device_t *dev)$/;"	f	file:
+driver_add_device	kernel\krnldevice.c	/^void driver_add_device(driver_t *drv, device_t *dev)$/;"	f
+driver_add_system	kernel\krnldevice.c	/^bool_t driver_add_system(driver_t *drv)$/;"	f
+driver_alloc	kernel\krnldevice.c	/^driver_t *driver_alloc(const char *name, struct drv_operations *ops)$/;"	f
+driver_init	kernel\krnldevice.c	/^static void driver_init(driver_t *drv)$/;"	f	file:
+driver_list_all	kernel\krnldevice.c	/^void driver_list_all(void)$/;"	f
+driver_load	kernel\krnldevice.c	/^void driver_load(void)$/;"	f
+driver_system_init	kernel\krnldevice.c	/^void driver_system_init(void)$/;"	f
+register_chrdev	kernel\krnldevice.c	/^dev_t register_chrdev(dev_t dev_id, device_t **dev, const char *name)$/;"	f
+KRNL_GLOBAL_VAR	kernel\krnlglobal.c	1;"	d	file:
+krnl_init	kernel\krnlinit.c	/^void krnl_init(void)$/;"	f
+datadown	kernel\krnlinterrupt.c	/^u32_t datadown = 2;$/;"	v
+dataup	kernel\krnlinterrupt.c	/^u32_t dataup = 1;$/;"	v
+device	kernel\krnlinterrupt.c	/^uint_t device = 1;$/;"	v
+free_irq	kernel\krnlinterrupt.c	/^bool_t free_irq(unsigned int irq, void *dev_id)$/;"	f
+interrupt_action_init	kernel\krnlinterrupt.c	/^private void interrupt_action_init(interrupt_action_t *ptr, interrupt_dscp_t *dscp, u32_t flag, $/;"	f
+interrupt_test	kernel\krnlinterrupt.c	/^void interrupt_test(void)$/;"	f
+irq_add_action	kernel\krnlinterrupt.c	/^private bool_t irq_add_action(interrupt_action_t *ptr, interrupt_dscp_t *dscp)$/;"	f
+irq_handler	kernel\krnlinterrupt.c	/^void irq_handler(uint_t irq, void *data)$/;"	f
+request_irq	kernel\krnlinterrupt.c	/^bool_t request_irq(unsigned int irq, irq_handler_t handler, void *device, unsigned long flags, const char *name, void *dev_id)$/;"	f
+krnl_alloc	kernel\krnlmm.c	/^adr_t krnl_alloc(size_t size)$/;"	f
+krnl_free	kernel\krnlmm.c	/^bool_t krnl_free(adr_t addr, size_t size)$/;"	f
+krnl_mm_init	kernel\krnlmm.c	/^void krnl_mm_init(void)$/;"	f
+krnl_mpl_init	kernel\krnlmm.c	/^private void krnl_mpl_init(krnl_mplmm_t *mplmm_ptr)$/;"	f
+krnl_blks_alloc	kernel\krnlpagemm.c	/^private adr_t krnl_blks_alloc(size_t size)$/;"	f
+krnl_blks_free	kernel\krnlpagemm.c	/^private adr_t krnl_blks_free(adr_t addr, size_t size)$/;"	f
+krnl_delete_pagempl	kernel\krnlpagemm.c	/^private void krnl_delete_pagempl(krnl_mplmm_t *mplmm_ptr, mplhead_t *mplhead_ptr)$/;"	f
+krnl_find_suitable_allocpagempl	kernel\krnlpagemm.c	/^private mplhead_t *krnl_find_suitable_allocpagempl(krnl_mplmm_t *mplmm_ptr, size_t sizes)$/;"	f
+krnl_find_suitable_freepagempl	kernel\krnlpagemm.c	/^private mplhead_t *krnl_find_suitable_freepagempl(krnl_mplmm_t *mplmm_ptr, adr_t addr, size_t size)$/;"	f
+krnl_free_pagempl	kernel\krnlpagemm.c	/^private bool_t krnl_free_pagempl(mplhead_t *mplhead_ptr, adr_t addr)$/;"	f
+krnl_mplhead_init	kernel\krnlpagemm.c	/^private mplhead_t *krnl_mplhead_init(krnl_mplmm_t *mplmm_ptr, mplhead_t *mplhead_ptr, size_t pagesize, adr_t start, adr_t end)$/;"	f
+krnl_new_pagempl	kernel\krnlpagemm.c	/^private mplhead_t *krnl_new_pagempl(krnl_mplmm_t *mplmm_ptr, size_t sizes)$/;"	f
+krnl_page_alloc	kernel\krnlpagemm.c	/^adr_t krnl_page_alloc(size_t size)$/;"	f
+krnl_page_core_alloc	kernel\krnlpagemm.c	/^private adr_t krnl_page_core_alloc(size_t size)$/;"	f
+krnl_page_core_free	kernel\krnlpagemm.c	/^private bool_t krnl_page_core_free(adr_t addr, size_t size)$/;"	f
+krnl_page_free	kernel\krnlpagemm.c	/^bool_t krnl_page_free(adr_t addr, size_t size)$/;"	f
+krnl_rtn_pageaddr	kernel\krnlpagemm.c	/^private adr_t krnl_rtn_pageaddr(mplhead_t *mplhead_ptr)$/;"	f
+mplhead_isok_allocpagempl	kernel\krnlpagemm.c	/^private bool_t mplhead_isok_allocpagempl(mplhead_t *ptr, size_t size)$/;"	f
+mplhead_isok_freepagempl	kernel\krnlpagemm.c	/^private bool_t mplhead_isok_freepagempl(mplhead_t *ptr, adr_t addr, size_t size)$/;"	f
+krnl_deal_new_thread	kernel\krnlsched.c	/^void krnl_deal_new_thread(thread_t *thd)$/;"	f
+krnl_find_thread	kernel\krnlsched.c	/^private thread_t *krnl_find_thread(void)$/;"	f
+krnl_rtn_cpuidle	kernel\krnlsched.c	/^private thread_t *krnl_rtn_cpuidle(void)$/;"	f
+krnl_rtn_currentthd	kernel\krnlsched.c	/^private thread_t *krnl_rtn_currentthd(void)$/;"	f
+krnl_save_contex_to_sched	kernel\krnlsched.c	/^void krnl_save_contex_to_sched(thread_t *prv, thread_t *next)$/;"	f
+krnl_sched_init	kernel\krnlsched.c	/^void krnl_sched_init(void)$/;"	f
+krnl_sched_up	kernel\krnlsched.c	/^void krnl_sched_up(waitlist_t *wlst)$/;"	f
+krnl_sched_wait	kernel\krnlsched.c	/^void krnl_sched_wait(waitlist_t *wlst, uint_t ms)$/;"	f
+krnl_set_schedflag	kernel\krnlsched.c	/^void krnl_set_schedflag(void)$/;"	f
+krnl_thdsched_tlb_add_thread	kernel\krnlsched.c	/^void krnl_thdsched_tlb_add_thread(thread_t *thd)$/;"	f
+krnl_thread_sched	kernel\krnlsched.c	/^void krnl_thread_sched(void)$/;"	f
+krnl_try_sched	kernel\krnlsched.c	/^void krnl_try_sched(void)$/;"	f
+thd_list_init	kernel\krnlsched.c	/^private void thd_list_init(thd_list_t *ptr)$/;"	f
+thdsched_init	kernel\krnlsched.c	/^private void thdsched_init(thdsched_t *ptr)$/;"	f
+thdsched_tlb_init	kernel\krnlsched.c	/^private void thdsched_tlb_init(thdsched_tlb_t *ptr)$/;"	f
+krnl_print_sem	kernel\krnlsem.c	/^void krnl_print_sem(sem_t *sem)$/;"	f
+krnl_sem_down	kernel\krnlsem.c	/^void krnl_sem_down(sem_t *sem)$/;"	f
+krnl_sem_init	kernel\krnlsem.c	/^void krnl_sem_init(sem_t *sem, sint_t count)$/;"	f
+krnl_sem_up	kernel\krnlsem.c	/^void krnl_sem_up(sem_t *sem)$/;"	f
+krnl_deal_sleep	kernel\krnlsleep.c	/^void krnl_deal_sleep(void)$/;"	f
+sleep	kernel\krnlsleep.c	/^void sleep(uint_t ms)$/;"	f
+i0	kernel\krnltask.c	/^int i0, i1, i2, i3;$/;"	v
+i1	kernel\krnltask.c	/^int i0, i1, i2, i3;$/;"	v
+i2	kernel\krnltask.c	/^int i0, i1, i2, i3;$/;"	v
+i3	kernel\krnltask.c	/^int i0, i1, i2, i3;$/;"	v
+krnl_task_init	kernel\krnltask.c	/^void krnl_task_init(void)$/;"	f
+task0	kernel\krnltask.c	/^void task0(void)$/;"	f
+task0_func	kernel\krnltask.c	/^void task0_func(void)$/;"	f
+task1	kernel\krnltask.c	/^void task1(void)$/;"	f
+task1_func	kernel\krnltask.c	/^void task1_func(void)$/;"	f
+task2	kernel\krnltask.c	/^void task2(void)$/;"	f
+task2_func	kernel\krnltask.c	/^void task2_func(void)$/;"	f
+task3	kernel\krnltask.c	/^void task3(void)$/;"	f
+task3_func	kernel\krnltask.c	/^void task3_func(void)$/;"	f
+krnl_inc_thread_tick	kernel\krnlthread.c	/^void krnl_inc_thread_tick(thread_t *thd)$/;"	f
+krnl_new_thread	kernel\krnlthread.c	/^thread_t *krnl_new_thread(void *func, uint_t prio, uint_t flag, size_t usr_stack_size, size_t krnl_stack_size)$/;"	f
+krnl_new_thread_dscp	kernel\krnlthread.c	/^thread_t *krnl_new_thread_dscp()$/;"	f
+krnl_new_thread_stack_init	kernel\krnlthread.c	/^void krnl_new_thread_stack_init(thread_t *thd, void *func, reg_t cpsr, reg_t spsr)$/;"	f
+krnl_rtn_curtthread	kernel\krnlthread.c	/^thread_t *krnl_rtn_curtthread(void)$/;"	f
+krnl_run_thread	kernel\krnlthread.c	/^void krnl_run_thread(thread_t *thd)$/;"	f
+krnl_thread_init	kernel\krnlthread.c	/^private void krnl_thread_init(thread_t *thd)$/;"	f
+krnl_waitlist_init	kernel\krnlwaitlist.c	/^void krnl_waitlist_init(waitlist_t *wait_list)$/;"	f
+krnl_waitlist_up	kernel\krnlwaitlist.c	/^void krnl_waitlist_up(waitlist_t *wait_list)$/;"	f
+krnl_waitlist_upall	kernel\krnlwaitlist.c	/^void krnl_waitlist_upall(waitlist_t *wait_list)$/;"	f
+krnl_waitlist_wait	kernel\krnlwaitlist.c	/^void krnl_waitlist_wait(waitlist_t *wait_list)$/;"	f
+system_call	kernel\systemcall.c	/^KLINE u32_t system_call(int nr, int var1, int var2, int var3, int var4, int var5, int var6, int var7)$/;"	f
+atoi	lib\string.c	/^int atoi(const char *str)$/;"	f
+itoa	lib\string.c	/^char *itoa(int num, char *str, int radix)$/;"	f
+memcpy	lib\string.c	/^void *memcpy(void *dest, const void *src, int n)$/;"	f
+memset	lib\string.c	/^void *memset(void *s, int c, int n)$/;"	f
+strcmp	lib\string.c	/^int strcmp(const char *s1, const char *s2)$/;"	f
+strcpy	lib\string.c	/^char *strcpy(char *dest, const char *src)$/;"	f
+strlcpy	lib\string.c	/^char *strlcpy(char *dest, const char *src, int n)$/;"	f
+strlen	lib\string.c	/^unsigned int strlen(const char *s)$/;"	f
+strstr	lib\string.c	/^char *strstr(const char *src, const char *sub)$/;"	f
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_PROGRAM_VERSION	5.8	//
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/

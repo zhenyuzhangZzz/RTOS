@@ -1,0 +1,460 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+APLL_CON0	.\include\s5pv210reg.h	8;"	d
+ARPHRD_ETHER	.\include\arp.h	8;"	d
+ARPOP_REPLY	.\include\arp.h	11;"	d
+ARPOP_REQUEST	.\include\arp.h	10;"	d
+BLKSIZE	.\build\addheader.c	16;"	d	file:
+BOOTDELAY	.\app\main.c	8;"	d	file:
+BPTR_BPHW	.\include\dm9000.h	120;"	d
+BPTR_JPT_200US	.\include\dm9000.h	121;"	d
+BPTR_JPT_600US	.\include\dm9000.h	122;"	d
+CLK_DIV0	.\include\s5pv210reg.h	13;"	d
+CLK_SRC0	.\include\s5pv210reg.h	12;"	d
+CONFIG_DM9000_BASE	.\include\dm9000.h	155;"	d
+CR_V	.\cpu\start.S	/^#define CR_V (1 << 13)$/;"	d
+DM9000_BPTR	.\include\dm9000.h	21;"	d
+DM9000_CHIPR	.\include\dm9000.h	45;"	d
+DM9000_DATA	.\include\dm9000.h	157;"	d
+DM9000_EPAR	.\include\dm9000.h	25;"	d
+DM9000_EPCR	.\include\dm9000.h	24;"	d
+DM9000_EPDRH	.\include\dm9000.h	27;"	d
+DM9000_EPDRL	.\include\dm9000.h	26;"	d
+DM9000_FCR	.\include\dm9000.h	23;"	d
+DM9000_FCTR	.\include\dm9000.h	22;"	d
+DM9000_GPCR	.\include\dm9000.h	33;"	d
+DM9000_GPR	.\include\dm9000.h	34;"	d
+DM9000_ID	.\include\dm9000.h	6;"	d
+DM9000_IMR	.\include\dm9000.h	61;"	d
+DM9000_IO	.\include\dm9000.h	156;"	d
+DM9000_ISR	.\include\dm9000.h	60;"	d
+DM9000_MAR	.\include\dm9000.h	31;"	d
+DM9000_MRCMD	.\include\dm9000.h	51;"	d
+DM9000_MRCMDX	.\include\dm9000.h	50;"	d
+DM9000_MRRH	.\include\dm9000.h	53;"	d
+DM9000_MRRL	.\include\dm9000.h	52;"	d
+DM9000_MWCMD	.\include\dm9000.h	55;"	d
+DM9000_MWCMDX	.\include\dm9000.h	54;"	d
+DM9000_MWRH	.\include\dm9000.h	57;"	d
+DM9000_MWRL	.\include\dm9000.h	56;"	d
+DM9000_NCR	.\include\dm9000.h	13;"	d
+DM9000_NSR	.\include\dm9000.h	14;"	d
+DM9000_PAR	.\include\dm9000.h	30;"	d
+DM9000_PHY	.\include\dm9000.h	48;"	d
+DM9000_PIDH	.\include\dm9000.h	43;"	d
+DM9000_PIDL	.\include\dm9000.h	42;"	d
+DM9000_PKT_MAX	.\include\dm9000.h	7;"	d
+DM9000_PKT_RDY	.\include\dm9000.h	8;"	d
+DM9000_RCR	.\include\dm9000.h	18;"	d
+DM9000_ROCR	.\include\dm9000.h	20;"	d
+DM9000_RSR	.\include\dm9000.h	19;"	d
+DM9000_RWPAH	.\include\dm9000.h	38;"	d
+DM9000_RWPAL	.\include\dm9000.h	37;"	d
+DM9000_SMCR	.\include\dm9000.h	46;"	d
+DM9000_TCR	.\include\dm9000.h	15;"	d
+DM9000_TRPAH	.\include\dm9000.h	36;"	d
+DM9000_TRPAL	.\include\dm9000.h	35;"	d
+DM9000_TSR1	.\include\dm9000.h	16;"	d
+DM9000_TSR2	.\include\dm9000.h	17;"	d
+DM9000_TXPLH	.\include\dm9000.h	59;"	d
+DM9000_TXPLL	.\include\dm9000.h	58;"	d
+DM9000_VIDH	.\include\dm9000.h	41;"	d
+DM9000_VIDL	.\include\dm9000.h	40;"	d
+DM9000_WCR	.\include\dm9000.h	28;"	d
+DM9000_ior	.\dev\dm9000.c	/^static unsigned char DM9000_ior(unsigned short reg)$/;"	f	file:
+DM9000_iow	.\dev\dm9000.c	/^static void DM9000_iow(unsigned short reg, unsigned short value)$/;"	f	file:
+DMC0_AREFSTATUS	.\include\s5pv210reg.h	76;"	d
+DMC0_BASE	.\include\s5pv210reg.h	59;"	d
+DMC0_CHIP0STATUS	.\include\s5pv210reg.h	74;"	d
+DMC0_CHIP1STATUS	.\include\s5pv210reg.h	75;"	d
+DMC0_CONCONTROL	.\include\s5pv210reg.h	60;"	d
+DMC0_DIRECTCMD	.\include\s5pv210reg.h	64;"	d
+DMC0_MEMCONFIG0	.\include\s5pv210reg.h	62;"	d
+DMC0_MEMCONFIG1	.\include\s5pv210reg.h	63;"	d
+DMC0_MEMCONTROL	.\include\s5pv210reg.h	61;"	d
+DMC0_MRSTATUS	.\include\s5pv210reg.h	77;"	d
+DMC0_PHYCONTROL0	.\include\s5pv210reg.h	66;"	d
+DMC0_PHYCONTROL1	.\include\s5pv210reg.h	67;"	d
+DMC0_PHYSTATUS	.\include\s5pv210reg.h	73;"	d
+DMC0_PRECHCONFIG	.\include\s5pv210reg.h	65;"	d
+DMC0_PWRDNCONFIG	.\include\s5pv210reg.h	68;"	d
+DMC0_TIMINGAREF	.\include\s5pv210reg.h	69;"	d
+DMC0_TIMINGDATA	.\include\s5pv210reg.h	71;"	d
+DMC0_TIMINGPOWER	.\include\s5pv210reg.h	72;"	d
+DMC0_TIMINGROW	.\include\s5pv210reg.h	70;"	d
+DMC1_AREFSTATUS	.\include\s5pv210reg.h	97;"	d
+DMC1_BASE	.\include\s5pv210reg.h	80;"	d
+DMC1_CHIP0STATUS	.\include\s5pv210reg.h	95;"	d
+DMC1_CHIP1STATUS	.\include\s5pv210reg.h	96;"	d
+DMC1_CONCONTROL	.\include\s5pv210reg.h	81;"	d
+DMC1_DIRECTCMD	.\include\s5pv210reg.h	85;"	d
+DMC1_MEMCONFIG0	.\include\s5pv210reg.h	83;"	d
+DMC1_MEMCONFIG1	.\include\s5pv210reg.h	84;"	d
+DMC1_MEMCONTROL	.\include\s5pv210reg.h	82;"	d
+DMC1_MRSTATUS	.\include\s5pv210reg.h	98;"	d
+DMC1_PHYCONTROL0	.\include\s5pv210reg.h	87;"	d
+DMC1_PHYCONTROL1	.\include\s5pv210reg.h	88;"	d
+DMC1_PHYSTATUS	.\include\s5pv210reg.h	94;"	d
+DMC1_PRECHCONFIG	.\include\s5pv210reg.h	86;"	d
+DMC1_PWRDNCONFIG	.\include\s5pv210reg.h	89;"	d
+DMC1_TIMINGAREF	.\include\s5pv210reg.h	90;"	d
+DMC1_TIMINGDATA	.\include\s5pv210reg.h	92;"	d
+DMC1_TIMINGPOWER	.\include\s5pv210reg.h	93;"	d
+DMC1_TIMINGROW	.\include\s5pv210reg.h	91;"	d
+DOWNLOAD_ERROR	.\include\net.h	45;"	d
+DOWNLOAD_SUCCESS	.\include\net.h	44;"	d
+DOWNLOAD_WAIT	.\include\net.h	43;"	d
+ECC_BYTE	.\include\nand.h	11;"	d
+ECC_SIZE	.\include\nand.h	10;"	d
+EPCR_EPOS_EE	.\include\dm9000.h	112;"	d
+EPCR_EPOS_PHY	.\include\dm9000.h	111;"	d
+EPCR_ERPRR	.\include\dm9000.h	113;"	d
+EPCR_ERPRW	.\include\dm9000.h	114;"	d
+EPCR_ERRE	.\include\dm9000.h	115;"	d
+EPLL_CON0	.\include\s5pv210reg.h	10;"	d
+ETHERTYPE_ARP	.\include\arp.h	6;"	d
+ETHERTYPE_IP	.\include\arp.h	7;"	d
+EXT_INT_1_CON	.\include\s5pv210reg.h	101;"	d
+EXT_INT_1_MASK	.\include\s5pv210reg.h	102;"	d
+EXT_INT_1_PEND	.\include\s5pv210reg.h	109;"	d
+FCTR_HWOT	.\include\dm9000.h	117;"	d
+FCTR_LWOT	.\include\dm9000.h	118;"	d
+GPA0CON	.\include\s5pv210reg.h	23;"	d
+GPC0CON	.\cpu\start.S	/^#define GPC0CON 0xE0200060$/;"	d
+GPC0CON	.\include\s5pv210reg.h	16;"	d
+GPC0DAT	.\cpu\start.S	/^#define GPC0DAT 0xE0200064$/;"	d
+GPC0DAT	.\include\s5pv210reg.h	17;"	d
+GPCR_GPIO0_OUT	.\include\dm9000.h	135;"	d
+GPH1CON	.\include\s5pv210reg.h	20;"	d
+GPR_PHY_PWROFF	.\include\dm9000.h	137;"	d
+HEADER_SIZE	.\build\addheader.c	15;"	d	file:
+IMG_SIZE	.\build\addheader.c	14;"	d	file:
+IMR_PAR	.\include\dm9000.h	124;"	d
+IMR_PRM	.\include\dm9000.h	128;"	d
+IMR_PTM	.\include\dm9000.h	127;"	d
+IMR_ROM	.\include\dm9000.h	126;"	d
+IMR_ROOM	.\include\dm9000.h	125;"	d
+IRQ_STACK	.\cpu\start.S	/^#define IRQ_STACK 0xD0035400$/;"	d
+ISR_PRS	.\include\dm9000.h	133;"	d
+ISR_PTS	.\include\dm9000.h	132;"	d
+ISR_ROOS	.\include\dm9000.h	130;"	d
+ISR_ROS	.\include\dm9000.h	131;"	d
+KEL_SIZE	.\app\main.c	11;"	d	file:
+KRL_START_ADDR	.\app\main.c	9;"	d	file:
+KRL_STORE_ADDR	.\app\main.c	10;"	d	file:
+LEDCON	.\include\led.h	6;"	d
+LEDDAT	.\include\led.h	7;"	d
+MP0_1CON	.\include\s5pv210reg.h	53;"	d
+MP0_3CON	.\include\s5pv210reg.h	54;"	d
+MP0_6CON	.\include\s5pv210reg.h	55;"	d
+MPLL_CON	.\include\s5pv210reg.h	9;"	d
+NAND_BLOCK_SIZE	.\include\nand.h	8;"	d
+NCR_EXT_PHY	.\include\dm9000.h	63;"	d
+NCR_FCOL	.\include\dm9000.h	65;"	d
+NCR_FDX	.\include\dm9000.h	66;"	d
+NCR_LBK	.\include\dm9000.h	67;"	d
+NCR_LBK_INT_MAC	.\include\dm9000.h	68;"	d
+NCR_LBK_INT_PHY	.\include\dm9000.h	69;"	d
+NCR_RST	.\include\dm9000.h	70;"	d
+NCR_WAKEEN	.\include\dm9000.h	64;"	d
+NFADDR	.\include\s5pv210reg.h	39;"	d
+NFCMMD	.\include\s5pv210reg.h	38;"	d
+NFCONF	.\include\s5pv210reg.h	36;"	d
+NFCONF_DATA	.\cpu\cpuinit.S	/^#define NFCONF_DATA ((0x1 << 23) | (0x3 << 12) |(0x2 << 8) | (0x1 << 4) | (0x0 << 3) | (0x0 << 2) |	(0x1 << 1))		$/;"	d
+NFCONT	.\include\s5pv210reg.h	37;"	d
+NFDATA	.\include\s5pv210reg.h	40;"	d
+NFECCCONF	.\include\s5pv210reg.h	44;"	d
+NFECCCONT	.\include\s5pv210reg.h	45;"	d
+NFECCPRGECC0	.\include\s5pv210reg.h	47;"	d
+NFECCPRGECC1	.\include\s5pv210reg.h	48;"	d
+NFECCPRGECC2	.\include\s5pv210reg.h	49;"	d
+NFECCPRGECC3	.\include\s5pv210reg.h	50;"	d
+NFECCSTAT	.\include\s5pv210reg.h	46;"	d
+NFSTAT	.\include\s5pv210reg.h	41;"	d
+NSR_LINKST	.\include\dm9000.h	73;"	d
+NSR_RXOV	.\include\dm9000.h	77;"	d
+NSR_SPEED	.\include\dm9000.h	72;"	d
+NSR_TX1END	.\include\dm9000.h	76;"	d
+NSR_TX2END	.\include\dm9000.h	75;"	d
+NSR_WAKEST	.\include\dm9000.h	74;"	d
+NULL	.\include\lib.h	4;"	d
+NULL	.\include\uart.h	6;"	d
+PAGE_SIZE	.\include\nand.h	7;"	d
+PROTOCOL_UDP	.\include\net.h	41;"	d
+PWMTIMER_BASE	.\include\s5pv210reg.h	116;"	d
+RCR_ALL	.\include\dm9000.h	97;"	d
+RCR_DIS_CRC	.\include\dm9000.h	96;"	d
+RCR_DIS_LONG	.\include\dm9000.h	95;"	d
+RCR_PRMSC	.\include\dm9000.h	99;"	d
+RCR_RUNT	.\include\dm9000.h	98;"	d
+RCR_RXEN	.\include\dm9000.h	100;"	d
+RCR_WTDIS	.\include\dm9000.h	94;"	d
+RSR_AE	.\include\dm9000.h	107;"	d
+RSR_CE	.\include\dm9000.h	108;"	d
+RSR_FOE	.\include\dm9000.h	109;"	d
+RSR_LCS	.\include\dm9000.h	104;"	d
+RSR_MF	.\include\dm9000.h	103;"	d
+RSR_PLE	.\include\dm9000.h	106;"	d
+RSR_RF	.\include\dm9000.h	102;"	d
+RSR_RWTO	.\include\dm9000.h	105;"	d
+SMC_BC_PMC	.\include\dm9000.h	153;"	d
+SMC_BC_TACC	.\include\dm9000.h	149;"	d
+SMC_BC_TACP	.\include\dm9000.h	152;"	d
+SMC_BC_TACS	.\include\dm9000.h	147;"	d
+SMC_BC_TAH	.\include\dm9000.h	151;"	d
+SMC_BC_TCOH	.\include\dm9000.h	150;"	d
+SMC_BC_TCOS	.\include\dm9000.h	148;"	d
+SMC_BYTE_ADDR_MODE	.\include\dm9000.h	142;"	d
+SMC_BYTE_ENABLE	.\include\dm9000.h	145;"	d
+SMC_DATA16_WIDTH	.\include\dm9000.h	141;"	d
+SMC_WAIT_ENABLE	.\include\dm9000.h	144;"	d
+SROM_BC1	.\include\s5pv210reg.h	113;"	d
+SROM_BW	.\include\s5pv210reg.h	112;"	d
+TCFG0	.\include\s5pv210reg.h	117;"	d
+TCFG1	.\include\s5pv210reg.h	118;"	d
+TCMPB0	.\include\s5pv210reg.h	123;"	d
+TCMPB1	.\include\s5pv210reg.h	128;"	d
+TCMPB2	.\include\s5pv210reg.h	133;"	d
+TCMPB3	.\include\s5pv210reg.h	138;"	d
+TCNTB0	.\include\s5pv210reg.h	122;"	d
+TCNTB1	.\include\s5pv210reg.h	127;"	d
+TCNTB2	.\include\s5pv210reg.h	132;"	d
+TCNTB3	.\include\s5pv210reg.h	137;"	d
+TCNTB4	.\include\s5pv210reg.h	142;"	d
+TCNTO0	.\include\s5pv210reg.h	124;"	d
+TCNTO1	.\include\s5pv210reg.h	129;"	d
+TCNTO2	.\include\s5pv210reg.h	134;"	d
+TCNTO3	.\include\s5pv210reg.h	139;"	d
+TCNTO4	.\include\s5pv210reg.h	143;"	d
+TCON	.\include\s5pv210reg.h	119;"	d
+TCR_CRC_DIS1	.\include\dm9000.h	84;"	d
+TCR_CRC_DIS2	.\include\dm9000.h	82;"	d
+TCR_EXCECM	.\include\dm9000.h	80;"	d
+TCR_PAD_DIS1	.\include\dm9000.h	83;"	d
+TCR_PAD_DIS2	.\include\dm9000.h	81;"	d
+TCR_TJDIS	.\include\dm9000.h	79;"	d
+TCR_TXREQ	.\include\dm9000.h	85;"	d
+TIME0	.\include\timer.h	/^	TIME0,$/;"	e	enum:TIMEx
+TIME1	.\include\timer.h	/^	TIME1,$/;"	e	enum:TIMEx
+TIME2	.\include\timer.h	/^	TIME2,$/;"	e	enum:TIMEx
+TIME3	.\include\timer.h	/^	TIME3,$/;"	e	enum:TIMEx
+TIME4	.\include\timer.h	/^	TIME4,$/;"	e	enum:TIMEx
+TIMEx	.\include\timer.h	/^typedef enum TIMEx$/;"	g
+TIMEx	.\include\timer.h	/^}TIMEx;$/;"	t
+TINT_CSTAT	.\include\s5pv210reg.h	147;"	d
+TSR_COL	.\include\dm9000.h	91;"	d
+TSR_EC	.\include\dm9000.h	92;"	d
+TSR_LC	.\include\dm9000.h	88;"	d
+TSR_LCOL	.\include\dm9000.h	90;"	d
+TSR_NC	.\include\dm9000.h	89;"	d
+TSR_TJTO	.\include\dm9000.h	87;"	d
+UBRDIV0	.\include\s5pv210reg.h	28;"	d
+UCON0	.\include\s5pv210reg.h	25;"	d
+UDIVSLOT0	.\include\s5pv210reg.h	29;"	d
+UDIVSLOTn_NUM	.\dev\uart.c	/^volatile unsigned int UDIVSLOTn_NUM[] = {0x0000, 0x0080, 0x0808, 0x0888, 0x2222, 0x4924, 0x4A52, 0x54AA,$/;"	v
+UFCON0	.\include\s5pv210reg.h	26;"	d
+UINTM0	.\include\s5pv210reg.h	32;"	d
+ULCON0	.\include\s5pv210reg.h	24;"	d
+URXH0	.\include\s5pv210reg.h	31;"	d
+UTRSTAT0	.\include\s5pv210reg.h	27;"	d
+UTXH0	.\include\s5pv210reg.h	30;"	d
+VIC0ADDRESS	.\include\s5pv210reg.h	108;"	d
+VIC0INTENABLE	.\include\s5pv210reg.h	104;"	d
+VIC0INTENCLEAR	.\include\s5pv210reg.h	105;"	d
+VIC0INTSELECT	.\include\s5pv210reg.h	103;"	d
+VIC0VECTADDR10	.\include\s5pv210reg.h	106;"	d
+VIC0VECTADDR21	.\include\s5pv210reg.h	145;"	d
+VIC0VECTPRIORITY10	.\include\s5pv210reg.h	107;"	d
+VPLL_CON	.\include\s5pv210reg.h	11;"	d
+WATCHDOG_BASE_ADDR	.\include\s5pv210reg.h	5;"	d
+_NAND_H_	.\include\nand.h	2;"	d
+_TIMER_H_	.\include\timer.h	2;"	d
+__ARP_H__	.\include\arp.h	2;"	d
+__DM9000_H__	.\include\dm9000.h	2;"	d
+__INTERRUPT_H__	.\include\interrupt.h	2;"	d
+__LED_H__	.\include\led.h	2;"	d
+__NET_H__	.\include\net.h	2;"	d
+__S5PV210_REG_H__	.\include\s5pv210reg.h	2;"	d
+__TYPE_H__	.\include\lib.h	2;"	d
+__UART_H__	.\include\uart.h	2;"	d
+_data_abrot	.\cpu\start.S	/^_data_abrot:$/;"	l
+_fiq_interrupt	.\cpu\start.S	/^_fiq_interrupt:$/;"	l
+_irq_interrupt	.\cpu\start.S	/^_irq_interrupt:$/;"	l
+_prefetch_abrot	.\cpu\start.S	/^_prefetch_abrot:$/;"	l
+_software_interrupt	.\cpu\start.S	/^_software_interrupt:$/;"	l
+_start	.\cpu\start.S	/^_start:$/;"	l
+_undefined_instruction	.\cpu\start.S	/^_undefined_instruction:$/;"	l
+_va_sizeof	.\include\uart.h	12;"	d
+ar_hln	.\include\arp.h	/^    unsigned char ar_hln; 							\/* 硬件地址长度(字节) *\/$/;"	m
+ar_hrd	.\include\arp.h	/^    unsigned short ar_hrd; 							\/* 硬件地址格式 *\/$/;"	m
+ar_op	.\include\arp.h	/^    unsigned short ar_op; 							\/* 操作代码 *\/$/;"	m
+ar_pln	.\include\arp.h	/^    unsigned char ar_pln; 							\/* 协议地址长度(字节) *\/$/;"	m
+ar_pro	.\include\arp.h	/^    unsigned short ar_pro; 							\/* 协议地址格式 *\/$/;"	m
+arp	.\include\arp.h	/^    arp_pkg arp;$/;"	m
+arp_buffer	.\net\arp.c	/^eth_arp_pkg arp_buffer;$/;"	v
+arp_pkg	.\include\arp.h	/^}arp_pkg;$/;"	t
+arp_process	.\net\arp.c	/^void arp_process(unsigned char *buffer)$/;"	f
+arp_reply	.\net\arp.c	/^void arp_reply(eth_arp_pkg *arp_ptr)$/;"	f
+arp_request	.\net\arp.c	/^int arp_request(unsigned char *dst_mac, unsigned char *src_mac, unsigned char *src_ip, unsigned char *dst_ip)$/;"	f
+arp_sha	.\include\arp.h	/^    unsigned char arp_sha[6]; 						\/* 源硬件地址 *\/$/;"	m
+arp_spa	.\include\arp.h	/^    unsigned char arp_spa[4]; 						\/* 源协议地址 *\/$/;"	m
+arp_tha	.\include\arp.h	/^    unsigned char arp_tha[6]; 						\/* 目地硬件地址 *\/$/;"	m
+arp_tpa	.\include\arp.h	/^    unsigned char arp_tpa[4]; 						\/* 目地协议地址 *\/$/;"	m
+atoi	.\lib\lib.c	/^int atoi(const char *str)$/;"	f
+autoboot	.\app\main.c	/^void autoboot(void)$/;"	f
+block_num	.\include\net.h	/^	unsigned short block_num;			\/\/块号$/;"	m
+chk_sum	.\include\net.h	/^	unsigned short chk_sum;				\/\/16位udp检验和$/;"	m
+chk_sum	.\include\net.h	/^	unsigned short chk_sum;				\/\/检验和$/;"	m
+clean_bss	.\cpu\start.S	/^clean_bss:$/;"	l
+clean_loop	.\cpu\start.S	/^clean_loop:	cmp r0, r1$/;"	l
+close_mmu	.\cpu\start.S	/^close_mmu:$/;"	l
+close_watchdog	.\cpu\start.S	/^close_watchdog:$/;"	l
+copy_code_to_ram	.\dev\nand.c	/^void copy_code_to_ram(unsigned int uboot_size)$/;"	f
+current_block	.\net\net.c	/^volatile unsigned int current_block = 1;						\/\/当前块号$/;"	v
+data	.\include\net.h	/^	unsigned char data[0];				\/\/数据指针$/;"	m
+data_abrot	.\cpu\start.S	/^data_abrot: .word _data_abrot$/;"	l
+delay	.\dev\nand.c	/^void delay(volatile unsigned int count)														$/;"	f
+delay_ms	.\dev\timer.c	/^void delay_ms(unsigned int ms)$/;"	f
+device_id	.\include\nand.h	/^	unsigned char device_id; $/;"	m	struct:nand_id_msg
+disenable_interrupts	.\dev\interrupt.c	/^void disenable_interrupts(void)$/;"	f
+dm9000_init	.\dev\dm9000.c	/^void dm9000_init(void)$/;"	f
+dm9000_irq	.\dev\dm9000.c	/^void dm9000_irq(void)$/;"	f
+dm9000_pre_init	.\dev\dm9000.c	/^static void dm9000_pre_init(void)$/;"	f	file:
+dm9000_probe	.\dev\dm9000.c	/^int dm9000_probe(void)$/;"	f
+dm9000_reset	.\dev\dm9000.c	/^static void dm9000_reset(void)$/;"	f	file:
+dm9000_rx	.\dev\dm9000.c	/^int dm9000_rx(unsigned char *buffer)$/;"	f
+dm9000_tx	.\dev\dm9000.c	/^void dm9000_tx(unsigned char *packet, unsigned int length)$/;"	f
+download_addr	.\net\net.c	/^volatile unsigned char *download_addr;							\/\/下载地址$/;"	v
+download_flag	.\net\net.c	/^volatile unsigned int download_flag;							\/\/下载完成标记$/;"	v
+dst_port	.\include\net.h	/^	unsigned short dst_port;			\/\/目的端口号$/;"	m
+dstaddr	.\include\net.h	/^	unsigned char dstaddr[4];			\/\/目的IP地址$/;"	m
+enable_interrupts	.\dev\interrupt.c	/^void enable_interrupts(void)$/;"	f
+eth_arp_pkg	.\include\arp.h	/^}eth_arp_pkg;$/;"	t
+eth_hdr	.\include\arp.h	/^    ether_head eth_hdr;$/;"	m
+ether_dhost	.\include\arp.h	/^    unsigned char ether_dhost[6];                   \/* 目地硬件地址 *\/$/;"	m
+ether_head	.\include\arp.h	/^}ether_head;$/;"	t
+ether_shost	.\include\arp.h	/^    unsigned char ether_shost[6];                   \/* 源硬件地址 *\/$/;"	m
+ether_type	.\include\arp.h	/^    unsigned short ether_type;                      \/* 网络类型 *\/$/;"	m
+exit10_init	.\dev\interrupt.c	/^void exit10_init(irq_handle_p irq_handle)$/;"	f
+filename	.\net\net.c	/^char filename[30] = "bootloaderhead.bin";						\/\/默认文件名$/;"	v
+fiq_interrupt	.\cpu\start.S	/^fiq_interrupt: .word _fiq_interrupt$/;"	l
+frag_off	.\include\net.h	/^	unsigned short frag_off;			\/\/分片偏移$/;"	m
+get_mac_flag	.\net\arp.c	/^unsigned char get_mac_flag = 0;											\/\/ = 1表示已经获取到mac$/;"	v
+host_ip_addr	.\net\arp.c	/^unsigned char host_ip_addr[4] = {192, 168, 0, 20};						\/\/主机ip$/;"	v
+host_mac_addr	.\net\arp.c	/^unsigned char host_mac_addr[6] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF};$/;"	v
+htons	.\include\arp.h	13;"	d
+id	.\include\net.h	/^	unsigned short id;					\/\/标志$/;"	m
+id_3th	.\include\nand.h	/^	unsigned char id_3th;$/;"	m	struct:nand_id_msg
+id_4th	.\include\nand.h	/^	unsigned char id_4th;$/;"	m	struct:nand_id_msg
+id_5th	.\include\nand.h	/^	unsigned char id_5th;$/;"	m	struct:nand_id_msg
+init_clock	.\cpu\cpuinit.S	/^init_clock:$/;"	l
+init_memory	.\cpu\cpuinit.S	/^init_memory:$/;"	l
+init_nand	.\cpu\cpuinit.S	/^init_nand:$/;"	l
+ip_addr	.\net\arp.c	/^unsigned char ip_addr[4] = {192, 168, 0, 30};							\/\/dm9000 ip addr$/;"	v
+ip_checksum	.\net\net.c	/^static unsigned short ip_checksum(unsigned char *ptr, int len)$/;"	f	file:
+ip_head	.\include\net.h	/^}ip_head;$/;"	t
+ip_process	.\net\net.c	/^static void ip_process(unsigned char *buffer, int len)$/;"	f	file:
+irq_handle_p	.\include\interrupt.h	/^typedef void(*irq_handle_p)(void);$/;"	t
+irq_handler	.\dev\interrupt.c	/^void irq_handler(void)$/;"	f
+irq_interrupt	.\cpu\start.S	/^irq_interrupt: .word _irq_interrupt$/;"	l
+is_my_ip	.\net\arp.c	/^int is_my_ip(unsigned char *ip)$/;"	f
+itoa	.\lib\lib.c	/^char *itoa(int num, char *str, int radix)$/;"	f
+krnl_fnc	.\app\main.c	/^void (*krnl_fnc)(void) = (void (*)(void))KRL_START_ADDR;$/;"	v
+led_change_status	.\dev\led.c	/^void led_change_status(int status)$/;"	f
+led_init	.\dev\led.c	/^void led_init(void)$/;"	f
+light_led	.\cpu\start.S	/^light_led:$/;"	l
+mac_addr	.\dev\dm9000.c	/^unsigned char mac_addr[6] = {0x10,0x02,0x03,0x04,0x05,0x06}; 	\/\/MAC addr$/;"	v
+main	.\app\main.c	/^int main(void)$/;"	f
+main	.\build\addheader.c	/^int main (int argc, char *argv[])  $/;"	f
+maker_id	.\include\nand.h	/^	unsigned char maker_id; $/;"	m	struct:nand_id_msg
+memcpy	.\lib\lib.c	/^void *memcpy(void *dest, const void *src, int n)$/;"	f
+memset	.\lib\lib.c	/^void *memset(void *s, int c, int n)$/;"	f
+nand_boot_linux	.\app\main.c	/^void nand_boot_linux(void)$/;"	f
+nand_calculate_ecc	.\dev\nand.c	/^static void nand_calculate_ecc(unsigned char *ecc_code)$/;"	f	file:
+nand_deselect_chip	.\dev\nand.c	/^void nand_deselect_chip()$/;"	f
+nand_enable_hwecc	.\dev\nand.c	/^void nand_enable_hwecc(void)$/;"	f
+nand_erase	.\dev\nand.c	/^unsigned char nand_erase(unsigned int addr)$/;"	f
+nand_id_msg	.\include\nand.h	/^typedef struct nand_id_msg$/;"	s
+nand_id_msg	.\include\nand.h	/^}nand_id_msg;$/;"	t
+nand_init	.\dev\nand.c	/^void nand_init()$/;"	f
+nand_oob_64	.\dev\nand.c	/^static unsigned char nand_oob_64[64] = {0x00};$/;"	v	file:
+nand_read	.\dev\nand.c	/^void nand_read(unsigned char *buf, unsigned int addr, int size)$/;"	f
+nand_read_id	.\dev\nand.c	/^void nand_read_id()$/;"	f
+nand_reset	.\dev\nand.c	/^void nand_reset()$/;"	f
+nand_select_chip	.\dev\nand.c	/^void nand_select_chip()$/;"	f
+nand_write	.\dev\nand.c	/^void nand_write(unsigned char *buf, unsigned int addr, unsigned int size)$/;"	f
+nand_write_hwecc	.\dev\nand.c	/^void nand_write_hwecc(unsigned char *buf, unsigned int addr, unsigned int size)$/;"	f
+net_handle	.\net\net.c	/^void net_handle(unsigned char *buffer, int len)$/;"	f
+netbuffer	.\dev\dm9000.c	/^unsigned char netbuffer[DM9000_PKT_MAX];$/;"	v
+no_use	.\cpu\start.S	/^no_use:$/;"	l
+opcode	.\include\net.h	/^	unsigned short opcode;				\/\/操作码$/;"	m
+prefetch_abrot	.\cpu\start.S	/^prefetch_abrot: .word _prefetch_abrot$/;"	l
+printf	.\dev\uart.c	/^int printf(const char *fmt, ...)$/;"	f
+printinfo	.\app\main.c	/^void printinfo(void)$/;"	f
+protocol	.\include\net.h	/^	unsigned char protocol;				\/\/协议$/;"	m
+raise	.\dev\uart.c	/^int raise(int signum)$/;"	f
+read_data	.\dev\nand.c	/^unsigned char read_data()$/;"	f
+read_nand_status	.\dev\nand.c	/^unsigned char read_nand_status()$/;"	f
+reset	.\cpu\start.S	/^reset:$/;"	l
+reset_time_val	.\dev\timer.c	/^void reset_time_val(void)$/;"	f
+set_svc	.\cpu\start.S	/^set_svc:$/;"	l
+set_vector	.\cpu\start.S	/^set_vector:	$/;"	l
+software_interrupt	.\cpu\start.S	/^software_interrupt: .word _software_interrupt$/;"	l
+src_port	.\include\net.h	/^	unsigned short src_port;			\/\/源端口号$/;"	m
+srcaddr	.\include\net.h	/^	unsigned char srcaddr[4];			\/\/源IP地址$/;"	m
+start_timer	.\dev\timer.c	/^void start_timer(unsigned long num)$/;"	f
+stop_all_timer	.\dev\timer.c	/^void stop_all_timer(void)$/;"	f
+stop_timer	.\dev\timer.c	/^void stop_timer(unsigned long num)$/;"	f
+strcmp	.\lib\lib.c	/^int strcmp(const char *s1, const char *s2)$/;"	f
+strcpy	.\lib\lib.c	/^char *strcpy(char *dest, const char *src)$/;"	f
+strlen	.\lib\lib.c	/^unsigned int strlen(const char *s)$/;"	f
+strstr	.\lib\lib.c	/^char *strstr(const char *src, const char *sub)$/;"	f
+tftp_data_pkg	.\include\net.h	/^}tftp_data_pkg;$/;"	t
+tftp_download	.\net\net.c	/^static int tftp_download(void)$/;"	f	file:
+tftp_download_nand	.\net\net.c	/^void tftp_download_nand(unsigned int krladdr)$/;"	f
+tftp_download_run	.\net\net.c	/^void tftp_download_run(void)$/;"	f
+tftp_process	.\net\net.c	/^static void tftp_process(unsigned char *buffer, int len, unsigned short sport)$/;"	f	file:
+tftp_request	.\net\net.c	/^static void tftp_request(void)$/;"	f	file:
+tftp_send_ack	.\net\net.c	/^static void tftp_send_ack(unsigned short port)$/;"	f	file:
+time_function	.\dev\timer.c	/^void time_function(void)$/;"	f
+time_val	.\dev\timer.c	/^volatile unsigned int time_val = 1000;$/;"	v
+timer_init	.\dev\timer.c	/^void timer_init(TIMEx timer_num, float S)$/;"	f
+tos	.\include\net.h	/^	unsigned char tos;					\/\/服务类型$/;"	m
+tot_len	.\include\net.h	/^	unsigned short tot_len;				\/\/总长度$/;"	m
+total_len	.\net\net.c	/^volatile unsigned int total_len;								\/\/文件长度$/;"	v
+ttl	.\include\net.h	/^	unsigned char ttl;					\/\/生存时间$/;"	m
+uart_buffer	.\dev\uart.c	/^unsigned char uart_buffer[100];$/;"	v
+uart_get_buffer	.\dev\uart.c	/^unsigned char *uart_get_buffer(void)$/;"	f
+uart_getchar	.\dev\uart.c	/^unsigned char uart_getchar()$/;"	f
+uart_gets	.\dev\uart.c	/^int uart_gets(void)$/;"	f
+uart_in	.\dev\uart.c	/^unsigned char uart_in(void)$/;"	f
+uart_init	.\dev\uart.c	/^void uart_init(unsigned int baud)$/;"	f
+uart_put_hex	.\dev\uart.c	/^static void uart_put_hex(unsigned char v, unsigned char small)$/;"	f	file:
+uart_put_int	.\dev\uart.c	/^static void uart_put_int(unsigned int v)$/;"	f	file:
+uart_put_int_hex	.\dev\uart.c	/^static void uart_put_int_hex(unsigned int v, unsigned char small)$/;"	f	file:
+uart_putchar	.\dev\uart.c	/^void uart_putchar(int c)$/;"	f
+uart_puts	.\dev\uart.c	/^void uart_puts(char *str)$/;"	f
+uart_recv_byte	.\dev\uart.c	/^static unsigned char uart_recv_byte()$/;"	f	file:
+uart_send_byte	.\dev\uart.c	/^static void uart_send_byte(unsigned char byte)$/;"	f	file:
+udp_head	.\include\net.h	/^}udp_head;$/;"	t
+udp_process	.\net\net.c	/^static void udp_process(unsigned char *buffer, int len)$/;"	f	file:
+uhl	.\include\net.h	/^	unsigned short uhl;					\/\/udp包长度$/;"	m
+undefined_instruction	.\cpu\start.S	/^undefined_instruction: .word _undefined_instruction$/;"	l
+va_arg	.\include\uart.h	14;"	d
+va_end	.\include\uart.h	15;"	d
+va_list	.\include\uart.h	11;"	d
+va_start	.\include\uart.h	13;"	d
+var_byte	.\include\s5pv210reg.h	152;"	d
+var_int	.\include\s5pv210reg.h	150;"	d
+var_word	.\include\s5pv210reg.h	151;"	d
+vhl	.\include\net.h	/^	unsigned char vhl;					\/\/首部长度和版本$/;"	m
+wait_idle	.\dev\nand.c	/^void wait_idle()$/;"	f
+wait_loop0	.\cpu\cpuinit.S	/^wait_loop0:$/;"	l
+wait_loop1	.\cpu\cpuinit.S	/^wait_loop1:$/;"	l
+write_addr	.\dev\nand.c	/^void write_addr(unsigned int addr)$/;"	f
+write_cmd	.\dev\nand.c	/^void write_cmd(int cmd)$/;"	f
+write_data	.\dev\nand.c	/^void write_data(unsigned char data)$/;"	f
